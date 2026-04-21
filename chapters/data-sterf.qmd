@@ -1,0 +1,28 @@
+## Sterf {.unnumbered}
+
+L’objectif est de suivre les populations de papillons de jour (et accessoirement d’hétérocères diurnes) le long de transects définis sur un ou plusieurs sites, en réalisant au moins 4 passages répartis au cours d’une année. À chaque passage, l’observateur·ice relève, de la manière la plus exhaustive possible, toutes les espèces (ou groupes d’espèces) observées le long des transects. Les conditions météorologiques sont cadrées par le protocole.
+
+Site de l'observatoire : [STERF](https://www.vigienature.fr/fr/suivi-temporel-des-rhopaloceres-de-france-sterf)
+
+### Description des champs
+
+| Nom du champ | Description |
+|----|----|
+| carre_id | Identifiant unique du carré |
+| transect_name | Nom du transect |
+| session_id | Identifiant unique de la session d'observation |
+| user_name | Nom de la personne ayant effectué l'observation |
+| session_date | Date de la session d'observation, au format DD/MM/YYYY |
+| session_starting_time | Heure du début de la session, au format hh:mm |
+| session_ending_time | Heure de fin de la session, au format hh:mm |
+| habitat_primaire | Type d'habitat primaire |
+| habitat_secondaire | Type d'habitat secondaire |
+| latitude_transect | Latitude du transect en projection WGS84 (crs=4326) |
+| longitude_transect | Longitude du transect en projection WGS84 (crs=4326) |
+| latitude | Latitude du site en projection WGS84 (crs=4326) |
+| longitude | Longitude du site en projection WGS84 (crs=4326) |
+| taxon | Nom de l'espèce ou du groupe identifié |
+| cd_nom | Numéro correspondant à l’identifiant unique d’un nom scientifique (référentiel TAXREF) |
+| taxon_count | Nombre d'observations du taxon |
+
+### Détail des filtres appliqués

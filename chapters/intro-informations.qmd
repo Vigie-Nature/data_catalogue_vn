@@ -1,0 +1,31 @@
+# Informations générales
+
+Ce projet vise à importer, filtrer et standardiser les exports "à plat" des données des différents observatoires de Vigie-Nature pour ensuite les uploader vers l'espace serveur du MESU
+
+Les étapes de l'envoi d'un export standardisé des données d'un observatoire sont les suivantes :
+
+1.  **Importer** les données sous un dataframe dans l'environnement global, les filtrer et les standardiser
+2.  **Tester** si l'export de données est conforme au standard défini dans les règles de contribution avec la fonction `check_data`
+3.  **Uploader** l'export de données vers le serveur avec la fonction `upload_file_to_server`
+
+Requirements
+
+Chaque export de données s'effectue grâce à une fonction dédiée
+
+Le script correspondant doit permettre d'effectuer les tâches suivantes :
+
+-   **Importer les données brutes** comme dataframe dans l'environnement gobal R
+
+-   **Standardiser les noms des champs** là où nécessaire afin d'homogénéiser les exports (session, observation, user, etc...) et appliquer les formatages nécessaires (ex : format de dates en `YYYY-MM-DD`)
+
+-   Corriger les problèmes de **valeurs aberrantes** là où nécessaire (ex : dates de sessions antérieures au lancement de l'observatoire, remplacer les `"null"`/`"NULL"` en `NA`)
+
+-   Appliquer et documenter les **filtres spécifiques à l'observatoire** (valeurs d'abondances aberrantes, taxons hors liste, anonymisation, observations en dehors du territoire de France hexagonale, occurrences à ne pas diffuser, etc...)
+
+## Importer les données brutes
+
+Deux possibilités selon les modalités d'accès aux données :
+
+- Import depuis un fichier `.csv` contenant un export de données "brutes" stocké dans le sous-répertoire `/data/input`.
+
+- Import des données via l'envoi d'une requête SQL dans le cas de Vigie-Nature école ou des bases de données hébergées chez Mosaic. Les requêtes sont placées dans le sous-répertoire `/sql`

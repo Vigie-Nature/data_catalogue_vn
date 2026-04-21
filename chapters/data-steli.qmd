@@ -1,0 +1,40 @@
+## Steli {.unnumbered}
+
+L’objectif est de suivre les populations de libellules sensu lato (soit tous les Odonates) d’un ou plusieurs sites, en réalisant au moins 3 passages répartis sur 3 périodes différentes au cours d’une année. À chaque passage, l’observateur·ice relève, de la manière la plus exhaustive possible, toutes les espèces observées durant 30 minutes minimum (et jusqu’à une heure). Les conditions météorologiques et les périodes pour réaliser ces inventaires sont cadrées par le protocole.
+
+Site de l'observatoire : [STELI](https://steli.mnhn.fr)
+
+### Description des champs
+
+| Nom du champ | Description |
+|------------------------------------|------------------------------------|
+| user_id | Identifiant unique de la personne ayant effectué l'observation |
+| user_name | Nom de la personne ayant effectué l'observation |
+| site_id | Identifiant unique du site |
+| site_name | Nom du site |
+| insee_code | Code INSEE de la commune du site |
+| site_aquatic_habitat | Type de l'habitat aquatique |
+| site_terrestrial_habitat | Type de l'habitat terrestre |
+| site_human_activities | Type des activités humaines |
+| geometry | Géométrie du site |
+| longitude | Longitude du site en projection WGS84 (crs=4326) |
+| latitude | Latitude du site en projection WGS84 (crs=4326) |
+| session_id | Identifiant unique de la session d'observation |
+| session_zip_code | Code postal du site |
+| session_date | Date de la session d'observation, au format YYYY-MM-DD |
+| session_start_time | Heure du début de la session, au format hh : mm : ss (l'export a actuellement un problème et cette colonne est vide) |
+| session_ending_time | Heure de fin de la session, au format hh : mm : ss (l'export a actuellement un problème et cette colonne est vide) |
+| session_duration | Durée de la session, au format hh : mm : ss (l'export a actuellement un problème et cette colonne est vide) |
+| session_temperature | Fourchette de temperature lors de la session |
+| session_wind | Force du vent lors de la session sur l'echelle de Beaufort |
+| session_cloud | Ensoleillement lors de la session |
+| observation_id | Identifiant unique de l'observation |
+| taxon | Nom scientifique de l'espèce, de la famille ou du genre identifié |
+| taxon_rank | Précision de l'identification |
+| cd_nom | Numéro correspondant à l’identifiant unique d’un nom scientifique (référentiel TAXREF) |
+| taxon_count | Nombre d'observations du taxon |
+| taxon_count_description | Type de comptage (observation seul, comptage, fourchette de comptage) |
+| user_validation_id_incertain | Incertitude de l'observateur |
+| validation | Validation de l'observation |
+
+### Détail des filtres appliqués
