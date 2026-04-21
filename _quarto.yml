@@ -44,6 +44,7 @@ book:
       chapters: 
         - chapters/data-spipoll.qmd
         - chapters/data-steli.qmd
+        - chapters/data-sterf.qmd
     - part: "Resources"
       chapters: 
         - chapters/references.qmd
