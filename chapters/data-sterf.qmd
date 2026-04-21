@@ -2,7 +2,7 @@
 
 L’objectif est de suivre les populations de papillons de jour (et accessoirement d’hétérocères diurnes) le long de transects définis sur un ou plusieurs sites, en réalisant au moins 4 passages répartis au cours d’une année. À chaque passage, l’observateur·ice relève, de la manière la plus exhaustive possible, toutes les espèces (ou groupes d’espèces) observées le long des transects. Les conditions météorologiques sont cadrées par le protocole.
 
-Site de l'observatoire : https://www.vigienature.fr/fr/suivi-temporel-des-rhopaloceres-de-france-sterf
+Site de l'observatoire : [STERF](https://www.vigienature.fr/fr/suivi-temporel-des-rhopaloceres-de-france-sterf)
 
 ### Description des champs
 
