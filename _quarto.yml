@@ -37,17 +37,17 @@ book:
     # - chapters/setting-up-r.qmd
     - part: "Introduction"
       chapters: 
-        - chapters/informations.qmd
-        - chapters/standardisation.qmd
-        - chapters/gettingstarted.qmd
+        - chapters/intro-informations.qmd
+        - chapters/intro-standardisation.qmd
+        - chapters/intro-gettingstarted.qmd
     - part: "Datasets"
       chapters: 
-        - chapters/dt-spipoll.qmd
-        - chapters/dt-steli.qmd
+        - chapters/data-spipoll.qmd
+    #    - chapters/data-steli.qmd
     - part: "Resources"
       chapters: 
-        - chapters/biblio.qmd
-        - chapters/wrap-up.qmd
+        - chapters/references.qmd
+    #    - chapters/wrap-up.qmd
     
 format:
   html:

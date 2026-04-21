@@ -1,0 +1,12 @@
+## Spipoll {.unnumbered}
+
+Ici on décrit le jeu de données Spipoll
+
+### Description des champs
+
+
+
+### Détail des filtres appliqués
+
+* Ajout d'une colonne ""
+* Ajout d'une colonne ""
