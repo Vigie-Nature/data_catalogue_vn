@@ -8,7 +8,7 @@
 
 <meta name="description" content="Description des exports de données des observatoires Vigie-Nature   ">
 
-<title>Vigie-Nature Data Catalogue - 1&nbsp; Informations générales</title>
+<title>Vigie-Nature Data Catalogue - 1&nbsp; Scripts d’export de données</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -26,7 +26,7 @@ ul.task-list li input[type="checkbox"] {
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<link href="../chapters/intro-standardisation.html" rel="next">
+<link href="../chapters/intro-gettingstarted.html" rel="next">
 <link href="../index.html" rel="prev">
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
@@ -65,7 +65,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/intro-informations.html">Introduction</a></li><li class="breadcrumb-item"><a href="../chapters/intro-informations.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Informations générales</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/intro-scripts.html">Informations générales</a></li><li class="breadcrumb-item"><a href="../chapters/intro-scripts.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Scripts d'export de données</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -91,7 +91,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">Introduction</span></a>
+ <span class="menu-text">Informations générales</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -99,20 +99,20 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/intro-informations.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Informations générales</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/intro-standardisation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Standardisation des exports</span></span></a>
+  <a href="../chapters/intro-scripts.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Scripts d’export de données</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/intro-gettingstarted.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Getting started</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Getting started</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/intro-tutorials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Tutoriels</span></span></a>
   </div>
 </li>
       </ul>
@@ -179,8 +179,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#scripts-dexport-de-données" id="toc-scripts-dexport-de-données" class="nav-link active" data-scroll-target="#scripts-dexport-de-données"><span class="header-section-number">1.1</span> Scripts d’export de données</a></li>
-  <li><a href="#importer-les-données-brutes" id="toc-importer-les-données-brutes" class="nav-link" data-scroll-target="#importer-les-données-brutes"><span class="header-section-number">1.2</span> Importer les données brutes</a></li>
+  <li><a href="#importer-les-données-brutes" id="toc-importer-les-données-brutes" class="nav-link active" data-scroll-target="#importer-les-données-brutes"><span class="header-section-number">1.1</span> Importer les données brutes</a></li>
+  <li><a href="#standardisation-des-exports" id="toc-standardisation-des-exports" class="nav-link" data-scroll-target="#standardisation-des-exports"><span class="header-section-number">1.2</span> Standardisation des exports</a>
+  <ul class="collapse">
+  <li><a href="#harmonisation-des-termes-utilisés" id="toc-harmonisation-des-termes-utilisés" class="nav-link" data-scroll-target="#harmonisation-des-termes-utilisés"><span class="header-section-number">1.2.1</span> Harmonisation des termes utilisés :</a></li>
+  <li><a href="#liste-des-noms-des-champs-obligatoires" id="toc-liste-des-noms-des-champs-obligatoires" class="nav-link" data-scroll-target="#liste-des-noms-des-champs-obligatoires"><span class="header-section-number">1.2.2</span> Liste des noms des champs obligatoires</a></li>
+  </ul></li>
+  <li><a href="#formatage-des-exports" id="toc-formatage-des-exports" class="nav-link" data-scroll-target="#formatage-des-exports"><span class="header-section-number">1.3</span> Formatage des exports</a></li>
   </ul>
 </nav>
     </div>
@@ -189,7 +194,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Informations générales</span></h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Scripts d’export de données</span></h1>
 </div>
 
 
@@ -204,18 +209,8 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Ce projet vise à importer, filtrer et standardiser les exports “à plat” des données des différents observatoires de Vigie-Nature pour ensuite les uploader vers l’espace serveur du dépôt VNE</p>
-<p>Les étapes de l’envoi d’un export standardisé des données d’un observatoire sont les suivantes :</p>
-<ol type="1">
-<li><p><strong>Importer</strong> les données sous un dataframe dans l’environnement global, les filtrer et les standardiser</p></li>
-<li><p><strong>Tester</strong> si l’export de données est conforme au standard défini dans les règles de contribution avec la fonction <code>check_data</code></p></li>
-<li><p><strong>Uploader</strong> l’export de données vers le serveur avec la fonction <code>upload_file_to_server</code></p></li>
-</ol>
 <p><br></p>
-<section id="scripts-dexport-de-données" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="scripts-dexport-de-données"><span class="header-section-number">1.1</span> Scripts d’export de données</h2>
-<p><br></p>
-<p>Chaque export de données s’effectue grâce à une fonction dédiée</p>
+<p>Chaque export de données s’effectue grâce à différentes tâches centralisées dans un script dédié au sein du dossier <code>analyse</code>.</p>
 <p>Le script correspondant doit permettre d’effectuer les tâches suivantes :</p>
 <ul>
 <li><p><strong>Importer les données brutes</strong> comme dataframe dans l’environnement gobal R</p></li>
@@ -224,14 +219,102 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Appliquer et documenter les <strong>filtres spécifiques à l’observatoire</strong> (valeurs d’abondances aberrantes, taxons hors liste, anonymisation, observations en dehors du territoire de France hexagonale, occurrences à ne pas diffuser, etc…)</p></li>
 </ul>
 <p><br></p>
-</section>
-<section id="importer-les-données-brutes" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="importer-les-données-brutes"><span class="header-section-number">1.2</span> Importer les données brutes</h2>
-<p><br></p>
+<section id="importer-les-données-brutes" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="importer-les-données-brutes"><span class="header-section-number">1.1</span> Importer les données brutes</h2>
 <p>Deux possibilités selon les modalités d’accès aux données :</p>
 <ul>
 <li><p>Import depuis un fichier <code>.csv</code> contenant un export de données “brutes” stocké dans le sous-répertoire <code>/data/input</code>.</p></li>
 <li><p>Import des données via l’envoi d’une requête SQL dans le cas de Vigie-Nature école ou des bases de données hébergées chez Mosaic. Les requêtes sont placées dans le sous-répertoire <code>/sql</code></p></li>
+</ul>
+<p><br></p>
+</section>
+<section id="standardisation-des-exports" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="standardisation-des-exports"><span class="header-section-number">1.2</span> Standardisation des exports</h2>
+<section id="harmonisation-des-termes-utilisés" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="harmonisation-des-termes-utilisés"><span class="header-section-number">1.2.1</span> Harmonisation des termes utilisés :</h3>
+<ul>
+<li><p><code>session</code> correspond à la participation, c’est-à-dire l’application du protocole par une personne à un moment donné (une collection Spipoll, un relevé Vigie-Flore, une partie Birdlab…). Une <code>session</code> d’observation doit systématiquement être associée à un identifiant unique (<code>session_id</code>) et à une date (<code>session_date</code>), et parfois à une heure de début et de fin (<code>session_starting_time</code>)</p></li>
+<li><p><code>observation</code> correspond à l’observation d’un taxon, et est associé à un identifiant unique (<code>observation_id</code>). Une session peut comporter une ou plusieurs observations. Les exports à plat peuvent contenir des sessions “vides” : aucun organisme n’a été observé et le champ <code>observation_id</code> sera vide.</p></li>
+<li><p><code>site</code> permet d’identifier le lieu où a été effectuée la session d’observation. Le site doit être associé à des coordonnées géographiques en WGS 84.</p></li>
+<li><p><code>latitude</code> &amp; <code>longitude</code> : afin de faciliter la synthèse des données l’export à plat doit associer un couple de coordonnées XY à chaque session. Dans la plupart des cas il s’agît simplement des coordonnées du point d’observation. Néanmoins certains protocoles se basent sur d’autres unités spatiales d’échantillonnage (transect, point d’observation, quadrat…), et dans ce cas là les valeurs correspondront au barycentre de la ligne ou du polygone.</p></li>
+<li><p><code>taxon</code> fournit l’information sur l’organisme ou le groupe d’organisme observé. Le <code>taxon</code> peut-être associé à une valeur de comptage (<code>taxon_count</code>) qui peut être une abondance ou un nombre de contacts. Si la valeur décrite dans <code>taxon_count</code> n’est pas un nombre d’individus alors le type doit être spécifié dans un champ <code>taxon_count_description</code>. Les exports à plat peuvent contenir des sessions “vides” : aucun organisme n’a été observé et le champ <code>taxon</code> sera vide.</p></li>
+</ul>
+</section>
+<section id="liste-des-noms-des-champs-obligatoires" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="liste-des-noms-des-champs-obligatoires"><span class="header-section-number">1.2.2</span> Liste des noms des champs obligatoires</h3>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>CHAQUE EXPORT DE DONNEES DOIT COMPRENDRE L’ENSEMBLE DES CHAMPS CI-DESSOUS</p>
+</div>
+</div>
+<table class="table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 48%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Nom du champ</th>
+<th>Description</th>
+<th>Valeurs aberrantes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>session_id</td>
+<td>Identifiant unique de la session d’observation</td>
+<td>Ne peut être NA</td>
+</tr>
+<tr class="even">
+<td>session_date</td>
+<td>Date de la session d’observation, au format YYYY-MM-DD</td>
+<td>Ne peut être NA</td>
+</tr>
+<tr class="odd">
+<td>observation_id</td>
+<td>Identifiant unique de l’observation</td>
+<td>Peut être NA si aucun organisme n’a été observée lors de la session</td>
+</tr>
+<tr class="even">
+<td>user_id</td>
+<td>Identifiant unique de la personne ayant effectué l’observation</td>
+<td>Ne peut être NA</td>
+</tr>
+<tr class="odd">
+<td>taxon</td>
+<td>Nom de l’espèce, du groupe d’espèce ou du type d’organisme observé</td>
+<td>Peut être NA si aucun organisme n’a été observé lors de la session</td>
+</tr>
+<tr class="even">
+<td>longitude</td>
+<td>Longitude du site d’observation (la valeur exacte pour un point d’observation, le barycentre pour un transect ou un polygone)</td>
+<td>Ne peut être NA</td>
+</tr>
+<tr class="odd">
+<td>latitude</td>
+<td>Latitude du site d’observation (la valeur exacte pour un point d’observation, le barycentre pour un transect ou un polygone)</td>
+<td>Ne peut être NA</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</section>
+</section>
+<section id="formatage-des-exports" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="formatage-des-exports"><span class="header-section-number">1.3</span> Formatage des exports</h2>
+<ul>
+<li><p><code>session_date</code> au format <code>YYYY-MM-DD</code></p></li>
+<li><p>si absente du jeu de données, ajouter la colonne <code>session_year</code> correspondant à l’année de la session</p></li>
+<li><p><code>latitude</code> &amp; <code>longitude</code> en projection WGS84</p></li>
 </ul>
 
 
@@ -478,8 +561,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapters/intro-standardisation.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Standardisation des exports</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../chapters/intro-gettingstarted.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Getting started</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
