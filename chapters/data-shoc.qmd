@@ -1,0 +1,15 @@
+## SHOC {.unnumbered}
+
+Le protocole du SHOC est très semblable à celui du STOC, avec deux différences majeures :
+
+-   Les dix points du carré sont remplacés par dix transects d’environ 300 mètres. Les transects doivent être placés bout à bout (ou en deux séries de cinq transects) et traverser les habitats majoritaires du carré bout à bout.
+
+-   Le carré sera visité deux fois en hiver : une première fois entre le 1er et le 31 décembre, puis entre 1er et le 31 janvier, avec un intervalle de 4-6 semaines entre chaque passage. A chaque passage, tous les transects sont visités, dans le même ordre. Tous les oiseaux vus et entendus sont notés, et un relevé de l’habitat est effectué, selon le même code que celui du STOC.
+
+[Site du SHOC](https://www.vigienature.fr/fr/suivi-hivernal-des-oiseaux-communs-shoc)
+
+### Description des tables et des champs
+
+[champs export SHOC](https://docs.google.com/spreadsheets/d/1v9Sd7cNzvrDxbCi9u0tnKZgz2Op6j7k2owASv5aepNU/edit?gid=1086435738#gid=1086435738)
+
+### Problèmes potentiels

@@ -1,0 +1,12 @@
+## QUBS escargot {.unnumbered}
+
+Le protocole consiste à suivre la diversité et l'abondance des escargots et des limaces sous un abri 
+
+[Site de QUBS escargot](https://www.qubs.fr/operation-escargots)
+
+### Description des tables et des champs
+
+[champs export QUBS escargot](https://docs.google.com/spreadsheets/d/1v9Sd7cNzvrDxbCi9u0tnKZgz2Op6j7k2owASv5aepNU/edit?gid=2064105038#gid=2064105038)
+
+
+### Problèmes potentiels
