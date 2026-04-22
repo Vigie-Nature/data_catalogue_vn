@@ -76,6 +76,7 @@ Dans le `_quarto.yml`, ajouter une ligne dédiée à la page de documentation da
       chapters: 
         - chapters/data-spipoll.qmd
         - chapters/data-steli.qmd
+        - chapters/data-opj.qmd
         - chapters/data-monjeudedonnees.qmd
     - part: "Resources"
 ```
