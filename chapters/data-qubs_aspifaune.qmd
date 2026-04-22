@@ -1,0 +1,11 @@
+## QUBS Aspifaune {.unnumbered}
+
+Le protocole consiste à collecter tous les organismes présents dans un carré de 25cmx 25cm à la surface du sol pendant 7 min à l’aide d’un aspirateur à bouche.
+
+[Site de QUBS Aspifaune](https://www.qubs.fr/aspifaune)
+
+### Description des tables et des champs
+
+[champs export QUBS Aspifaune](https://docs.google.com/spreadsheets/d/1v9Sd7cNzvrDxbCi9u0tnKZgz2Op6j7k2owASv5aepNU/edit?gid=1932114714#gid=1932114714)
+
+### Problèmes potentiels

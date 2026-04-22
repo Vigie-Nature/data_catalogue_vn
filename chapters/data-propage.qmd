@@ -1,0 +1,11 @@
+## Propage {.unnumbered}
+
+Le protocole consiste à dénombrer et identifier les papillons parmi les 38 espèces ou groupes d’espèces proposés en se déplaçant dans un espace vert pendant 10 minutes sur une distance d’environ 100 à 300 mètres. Plusieurs outils sont fournis aux gestionnaires : un livret d’accompagnement au protocole, des fiches de terrain complétées d’un guide d’identification des papillons, disponibles ici et en version papier sur demande à propage\@noe.org, et la possibilité de bénéficier d’une demi-journée de formation à la mise en place du protocole.
+
+[Site de Propage](https://www.vigienature.fr/fr/propage)
+
+### Description des tables et des champs
+
+[champs export propage](https://docs.google.com/spreadsheets/d/1v9Sd7cNzvrDxbCi9u0tnKZgz2Op6j7k2owASv5aepNU/edit?gid=630811929#gid=630811929)
+
+### Problèmes potentiels

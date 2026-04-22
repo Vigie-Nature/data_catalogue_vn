@@ -1,0 +1,13 @@
+## QUBS vers {.unnumbered}
+
+Le protocole consiste à collecter tous les vers de terre dans un bloc de sol de 20 cm de côté.
+
+[Site de QUBS vers](https://www.qubs.fr/en-quete-de-vers)
+
+### Description des tables et des champs
+
+[champs export QUBS vers](https://docs.google.com/spreadsheets/d/1v9Sd7cNzvrDxbCi9u0tnKZgz2Op6j7k2owASv5aepNU/edit?gid=790683031#gid=790683031)
+
+
+### Problèmes potentiels
+
