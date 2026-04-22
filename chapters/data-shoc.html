@@ -8,7 +8,7 @@
 
 <meta name="description" content="Description des exports de données des observatoires Vigie-Nature  ">
 
-<title>OAB – Vigie-Nature Data Catalogue</title>
+<title>SHOC – Vigie-Nature Data Catalogue</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -26,8 +26,8 @@ ul.task-list li input[type="checkbox"] {
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<link href="../chapters/data-propage.html" rel="next">
-<link href="../chapters/data-florileges.html" rel="prev">
+<link href="../chapters/data-spipoll.html" rel="next">
+<link href="../chapters/data-qubs_vers.html" rel="prev">
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -68,7 +68,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/data-florileges.html">Datasets</a></li><li class="breadcrumb-item"><a href="../chapters/data-oab.html">OAB</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/data-florileges.html">Datasets</a></li><li class="breadcrumb-item"><a href="../chapters/data-shoc.html">SHOC</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -139,7 +139,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/data-oab.html" class="sidebar-item-text sidebar-link active">
+  <a href="../chapters/data-oab.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">OAB</span></a>
   </div>
 </li>
@@ -175,7 +175,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/data-shoc.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/data-shoc.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">SHOC</span></a>
   </div>
 </li>
@@ -234,9 +234,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/data-florileges.html">Datasets</a></li><li class="breadcrumb-item"><a href="../chapters/data-oab.html">OAB</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/data-florileges.html">Datasets</a></li><li class="breadcrumb-item"><a href="../chapters/data-shoc.html">SHOC</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">OAB</h1>
+<h1 class="title">SHOC</h1>
 </div>
 
 
@@ -253,61 +253,18 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Programme de suivi de la biodiversité en milieu agricole destiné aux agriculteurs.</p>
-<p><a href="https://www.observatoire-agricole-biodiversite.fr/">Site de l’OAB</a></p>
+<p>Le protocole du SHOC est très semblable à celui du STOC, avec deux différences majeures :</p>
+<ul>
+<li><p>Les dix points du carré sont remplacés par dix transects d’environ 300 mètres. Les transects doivent être placés bout à bout (ou en deux séries de cinq transects) et traverser les habitats majoritaires du carré bout à bout.</p></li>
+<li><p>Le carré sera visité deux fois en hiver : une première fois entre le 1er et le 31 décembre, puis entre 1er et le 31 janvier, avec un intervalle de 4-6 semaines entre chaque passage. A chaque passage, tous les transects sont visités, dans le même ordre. Tous les oiseaux vus et entendus sont notés, et un relevé de l’habitat est effectué, selon le même code que celui du STOC.</p></li>
+</ul>
+<p><a href="https://www.vigienature.fr/fr/suivi-hivernal-des-oiseaux-communs-shoc">Site du SHOC</a></p>
 <section id="description-des-tables-et-des-champs" class="level3">
 <h3 class="anchored" data-anchor-id="description-des-tables-et-des-champs">Description des tables et des champs</h3>
-<p>Pour l’instant il y a 4 tables qui correspondent aux protocoles nichoirs à abeilles solitaire, transects papillons, placettes à vers de terre et planches à invertébrés. Toutes les tables contiennent les champs suivants:</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Nom du champ</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>session_id</td>
-<td>Identifiant unique de la session d’observation</td>
-</tr>
-<tr class="even">
-<td>session_date</td>
-<td>Date de la session d’observation</td>
-</tr>
-<tr class="odd">
-<td>user_id</td>
-<td>Identifiant unique de la personne ayant effectué l’observation</td>
-</tr>
-<tr class="even">
-<td>longitude</td>
-<td>Longitude du site en projection WGS84 (crs=4326)</td>
-</tr>
-<tr class="odd">
-<td>latitude</td>
-<td>Latitude du site en projection WGS84 (crs=4326)</td>
-</tr>
-<tr class="even">
-<td>observation_id</td>
-<td>Identifiant unique de l’observation (créé par concaténation de la session_id et du nom du taxon). NA pour une session vide.</td>
-</tr>
-<tr class="odd">
-<td>taxon</td>
-<td>Nom du taxon concerné (nom utilisé dans le protocole, ce n’est pas un nom scientifique). NA pour une session vide.</td>
-</tr>
-<tr class="even">
-<td>taxon_count</td>
-<td>Nombre d’observations du taxon. NA pour une session vide.</td>
-</tr>
-</tbody>
-</table>
+<p><a href="https://docs.google.com/spreadsheets/d/1v9Sd7cNzvrDxbCi9u0tnKZgz2Op6j7k2owASv5aepNU/edit?gid=1086435738#gid=1086435738">champs export SHOC</a></p>
 </section>
 <section id="problèmes-potentiels" class="level3">
 <h3 class="anchored" data-anchor-id="problèmes-potentiels">Problèmes potentiels</h3>
-<p>Pour l’instant, aucun filtre n’est appliqué. En particulier, il y a un certain nombre d’observations sans coordonnées géographiques. De plus, il peut y avoir des observations avant le lancement du programme (2012).</p>
 
 
 </section>
@@ -715,13 +672,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../chapters/data-florileges.html" class="pagination-link" aria-label="Florilèges">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Florilèges</span>
+      <a href="../chapters/data-qubs_vers.html" class="pagination-link" aria-label="QUBS vers">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">QUBS vers</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapters/data-propage.html" class="pagination-link" aria-label="Propage">
-        <span class="nav-page-text">Propage</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../chapters/data-spipoll.html" class="pagination-link" aria-label="Spipoll">
+        <span class="nav-page-text">Spipoll</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
