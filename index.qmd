@@ -2,3 +2,14 @@
 
 Bienvenue dans la documentation des exports de données collectées dans le cadre des observatoires de Vigie-Nature.
 
+Ce projet vise à importer, filtrer et standardiser les exports "à plat" des données des différents observatoires de Vigie-Nature pour ensuite les uploader vers l'espace serveur du dépôt VNE
+
+Les étapes de l'envoi d'un export standardisé des données d'un observatoire sont les suivantes :
+
+1.  **Importer** les données sous un dataframe dans l'environnement global, les **filtrer** et les **standardiser**
+
+2.  **Tester** si l'export de données est conforme au standard défini dans les règles de contribution avec la fonction `check_data`
+
+3.  **Uploader** l'export de données vers le serveur avec la fonction `upload_file_to_server`
+
+Chaque export de données doit être documenté dans la partie dédiée
