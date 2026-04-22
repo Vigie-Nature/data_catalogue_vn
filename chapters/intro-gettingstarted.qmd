@@ -3,7 +3,8 @@
 ## Data base access
 
 ```{r}
-#| include: FALSE
+#| eval: FALSE
+#| echo: TRUE
 ## Install usethis package ----
 install.packages("usethis")
 
@@ -14,7 +15,8 @@ usethis::edit_r_environ()
 Then add the access variables following this example
 
 ```{r}
-#| include: FALSE
+#| eval: FALSE
+#| echo: TRUE
 
 # FTP ACCESS
 FTP_USER=ftp-user
