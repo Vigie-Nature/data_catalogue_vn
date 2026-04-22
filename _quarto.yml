@@ -42,7 +42,14 @@ book:
         - chapters/intro-gettingstarted.qmd
     - part: "Datasets"
       chapters:
+        - chapters/data-florileges.qmd
         - chapters/data-oab.qmd
+        - chapters/data-propage.qmd
+        - chapters/data-qubs_aspifaune.qmd
+        - chapters/data-qubs_escargot.qmd
+        - chapters/data-qubs_noctambules.qmd
+        - chapters/data-qubs_vers.qmd
+        - chapters/data-shoc.qmd
         - chapters/data-spipoll.qmd
         - chapters/data-steli.qmd
         - chapters/data-sterf.qmd
