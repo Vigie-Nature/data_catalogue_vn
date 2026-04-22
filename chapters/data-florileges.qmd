@@ -1,0 +1,11 @@
+## Florilèges {.unnumbered}
+
+Le protocole consiste à recenser 60 espèces dans 10 carrés d’1m² au cœur même de la prairie. Plusieurs outils sont fournis aux gestionnaires : un livret d’accompagnement au protocole, des fiches de terrain complétées de deux guides d'identification des plantes (la «Clé des prairies» et la «Clé des Poacées»).
+
+[Site de Florilèges](https://www.vigienature.fr/fr/florileges)
+
+### Description des tables et des champs
+
+[champs export florileges](https://docs.google.com/spreadsheets/d/1v9Sd7cNzvrDxbCi9u0tnKZgz2Op6j7k2owASv5aepNU/edit?gid=83603403#gid=83603403)
+
+### Problèmes potentiels

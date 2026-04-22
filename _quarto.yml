@@ -35,14 +35,21 @@ book:
   chapters:
     - index.qmd
     # - chapters/setting-up-r.qmd
-    - part: "Introduction"
+    - part: "Informations générales"
       chapters:
-        - chapters/intro-informations.qmd
-        - chapters/intro-standardisation.qmd
+        - chapters/intro-scripts.qmd
         - chapters/intro-gettingstarted.qmd
+        - chapters/intro-tutorials.qmd
     - part: "Datasets"
       chapters:
+        - chapters/data-florileges.qmd
         - chapters/data-oab.qmd
+        - chapters/data-propage.qmd
+        - chapters/data-qubs_aspifaune.qmd
+        - chapters/data-qubs_escargot.qmd
+        - chapters/data-qubs_noctambules.qmd
+        - chapters/data-qubs_vers.qmd
+        - chapters/data-shoc.qmd
         - chapters/data-spipoll.qmd
         - chapters/data-steli.qmd
         - chapters/data-sterf.qmd
