@@ -1,14 +1,20 @@
 # Informations générales
 
-Ce projet vise à importer, filtrer et standardiser les exports "à plat" des données des différents observatoires de Vigie-Nature pour ensuite les uploader vers l'espace serveur du MESU
+Ce projet vise à importer, filtrer et standardiser les exports "à plat" des données des différents observatoires de Vigie-Nature pour ensuite les uploader vers l'espace serveur du dépôt VNE
 
 Les étapes de l'envoi d'un export standardisé des données d'un observatoire sont les suivantes :
 
 1.  **Importer** les données sous un dataframe dans l'environnement global, les filtrer et les standardiser
+
 2.  **Tester** si l'export de données est conforme au standard défini dans les règles de contribution avec la fonction `check_data`
+
 3.  **Uploader** l'export de données vers le serveur avec la fonction `upload_file_to_server`
 
-Requirements
+<br>
+
+## Scripts d'export de données
+
+<br>
 
 Chaque export de données s'effectue grâce à une fonction dédiée
 
@@ -22,7 +28,11 @@ Le script correspondant doit permettre d'effectuer les tâches suivantes :
 
 -   Appliquer et documenter les **filtres spécifiques à l'observatoire** (valeurs d'abondances aberrantes, taxons hors liste, anonymisation, observations en dehors du territoire de France hexagonale, occurrences à ne pas diffuser, etc...)
 
+<br>
+
 ## Importer les données brutes
+
+<br>
 
 Deux possibilités selon les modalités d'accès aux données :
 
