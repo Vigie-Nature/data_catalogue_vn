@@ -2,43 +2,57 @@
 
 ## Accès aux bases de données
 
-Commencer par installer le package `usethis`
+Copier le fichier `.Renviron.example` vers `.Renviron` puis l'ouvrir.
 
+Les variables d'environnements qui permettent d'accéder aux différentes bases de 
+données ainsi qu'au serveur distant sont listées ci-dessous.
+
+- Accès au FTP de stockage des jeux de données nettoyés:
+
+Il faut deux addresses, une pour accéder au FTP en écriture, et une pour y accéder en HTTPS 
+en lecture pour télécharger les fichiers.
 ```{r}
 #| eval: FALSE
 #| echo: TRUE
-install.packages("usethis")
+
+REPO_FTP_USER=repo_ftp_user
+REPO_FTP_PASSWORD=repo_ftp_password
+REPO_FTP_HOST=repo_ftp_host
+REPO_HTTP_HOST=repo_http_host
 ```
 
-Ouvrir le fichier `~/.Renviron file`
-```{r}
-#| eval: FALSE
-#| echo: TRUE
-usethis::edit_r_environ()
-```
-
-Ajouter ensuite les variables d'environnements qui permettent d'accéder aux différentes bases de données ainsi qu'au serveur distant.
-
+- Accès aux bases de données de Vigie Nature École:
 ```{r}
 #| eval: FALSE
 #| echo: TRUE
 
-# FTP ACCESS
-FTP_USER=ftp-user
-FTP_PASSWORD=ftp-psw
-SITE_FTP=ftp-adress
-
-# HTTPS ACCESS
-HTTPS_USER=http-user
-HTTPS_PASSWORD=http-psw
-SITE_NAME=http-adress
-
-# Vigie-Nature École ACCESS
+BDD_VNE_USER=bdd_vne_user
+BDD_VNE_PASSWORD=bdd_vne_password
 BDD_VNE_HOST=bdd_vne_host
-BDD_VNE_PORT=bdd_vne_post
-BDD_VNE_NAME=VNbdd_vne_name
-BDD_VNE_USER=bdd_vne_user   
-BDD_VNE_MDP=bdd_vne_mdp
+BDD_VNE_PORT=bdd_vne_port
+BDD_VNE_NAME=bdd_vne_name
+```
+
+- Accès aux bases de données hébergées chez Mosaic:
+```{r}
+#| eval: FALSE
+#| echo: TRUE
+
+BDD_MOSAIC_USER=bdd_mosaic_user
+BDD_MOSAIC_PASSWORD=bdd_mosaic_password
+BDD_MOSAIC_HOST=127.0.0.1
+BDD_MOSAIC_PORT=bdd_mosaic_local_port
+```
+
+Pour accéder aux bases de données mosaic, il faut demander les accès et configurer un VPN.
+Ensuite il faut manuellement lancer un tunnel SSH avec la commande suivante (en ligne de commande)
+avant de pouvoir faire les exports (le numéro de port `bdd_mosaic_local_port` doit correspondre avec celui
+de la configuration, il est faut prendre un nombre entre 10000 et 40000 et le changer si on
+obtient l'erreur `Address already in use`)
+```{bash}
+#| eval: FALSE
+#| echo: TRUE
+ssh bdd_mosaic_user@bdd_mosaic_address -p bdd_mosaic_port -J bdd_mosaic_user@bdd_mosaic_address_jump:bdd_mosaic_port_jump -L bdd_mosaic_port:localhost:boo_mosaic_port
 ```
 
 <br>
