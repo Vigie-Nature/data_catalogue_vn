@@ -1,0 +1,26 @@
+## OAB {.unnumbered}
+
+Programme de suivi de la biodiversité en milieu agricole destiné aux agriculteurs. 
+
+[Site de l'OAB](https://www.observatoire-agricole-biodiversite.fr/)
+
+### Description des tables et des champs
+
+Pour l'instant il y a 4 tables qui correspondent aux protocoles nichoirs à abeilles solitaire, transects papillons,
+placettes à vers de terre et planches à invertébrés. Toutes les tables contiennent les champs suivants:
+
+| Nom du champ | Description |
+|------------------------------------|------------------------------------|
+| session_id | Identifiant unique de la session d'observation |
+| session_date| Date de la session d'observation |
+| user_id | Identifiant unique de la personne ayant effectué l'observation |
+| longitude | Longitude du site en projection WGS84 (crs=4326) |
+| latitude | Latitude du site en projection WGS84 (crs=4326) |
+| observation_id | Identifiant unique de l'observation (créé par concaténation de la session_id et du nom du taxon). NA pour une session vide. |
+| taxon | Nom du taxon concerné (nom utilisé dans le protocole, ce n'est pas un nom scientifique). NA pour une session vide. |
+| taxon_count | Nombre d'observations du taxon. NA pour une session vide. |
+
+### Problèmes potentiels
+
+Pour l'instant, aucun filtre n'est appliqué. En particulier, il y a un certain nombre d'observations sans coordonnées géographiques.
+De plus, il peut y avoir des observations avant le lancement du programme (2012).
