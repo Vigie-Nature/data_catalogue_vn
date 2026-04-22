@@ -1,0 +1,38 @@
+# Tutoriels
+
+## Ajouter une page de documentation par jeu de données
+
+Décrire les étapes de la façon suivante
+
+1.  Créer `data-monobservatoire.qmd` dans le dossier `/chapters`
+
+La documentation doit comporter a minima les parties suivantes :
+
+-   Titre avec la spécification `{.unnumbered}`
+-   Description courte de l'observatoire et lien vers la page sur le site VN
+-   Tableau avec la description de chacun des champs de l'export à plat (a minima nom du champ et description)
+
+2.  Ajouter la page dans l'arborescence du livre
+
+Dans le `_quarto.yml`, ajouter une ligne dédiée à la page de documentation dans la partie "Datasets", au format suivant :
+
+-   chapters/data-**monjeudedeonnees**.qmd
+
+```{r}
+#| eval: FALSE
+#| echo: TRUE
+  chapters:
+    - index.qmd
+    # - chapters/setting-up-r.qmd
+    - part: "Introduction"
+      chapters: 
+        - chapters/intro-informations.qmd
+        - chapters/intro-standardisation.qmd
+        - chapters/intro-gettingstarted.qmd
+    - part: "Datasets"
+      chapters: 
+        - chapters/data-spipoll.qmd
+        - chapters/data-steli.qmd
+        - chapters/data-monjeudedonnees.qmd
+    - part: "Resources"
+```
