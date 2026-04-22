@@ -9,7 +9,7 @@ données ainsi qu'au serveur distant sont listées ci-dessous.
 
 - Accès au FTP de stockage des jeux de données nettoyés:
 
-Il faut deux addresses, une pour accéder au FTP en écriture, et une pour y accéder en HTTPS 
+Il faut deux configurations, une pour accéder au FTP en écriture, et une pour y accéder en HTTPS 
 en lecture pour télécharger les fichiers.
 ```{r}
 #| eval: FALSE
@@ -18,6 +18,8 @@ en lecture pour télécharger les fichiers.
 REPO_FTP_USER=repo_ftp_user
 REPO_FTP_PASSWORD=repo_ftp_password
 REPO_FTP_HOST=repo_ftp_host
+REPO_HTTP_USER=repo_http_user
+REPO_HTTP_PASSWORD=repo_http_password
 REPO_HTTP_HOST=repo_http_host
 ```
 
