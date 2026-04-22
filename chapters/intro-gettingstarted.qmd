@@ -1,18 +1,23 @@
 # Getting started
 
-## Data base access
+## Accès aux bases de données
+
+Commencer par installer le package `usethis`
 
 ```{r}
 #| eval: FALSE
 #| echo: TRUE
-## Install usethis package ----
 install.packages("usethis")
+```
 
-## Open ~/.Renviron file ----
+Ouvrir le fichier `~/.Renviron file`
+```{r}
+#| eval: FALSE
+#| echo: TRUE
 usethis::edit_r_environ()
 ```
 
-Then add the access variables following this example
+Ajouter ensuite les variables d'environnements qui permettent d'accéder aux différentes bases de données ainsi qu'au serveur distant.
 
 ```{r}
 #| eval: FALSE
