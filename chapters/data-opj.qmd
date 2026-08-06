@@ -1,0 +1,45 @@
+## Opération Papillons des Jardins {.unnumbered}
+
+Programme de suivi des lépidoptères destiné au grand public. 
+
+[Site OPJ](https://www.sciences-participatives-au-jardin.org/edito/papillons)
+
+### Description des tables et des champs
+
+| Nom du champ | Description | Méthode d'encodage |
+|-------------------------|--------------------------|-------------------------|
+| observation_id | Identifiant unique par observation | Attribué |
+| session_id | Identifiant unique par session (ensemble d'observations) | Attribué |
+| session_date | Date de la session | Remplissage libre |
+| session_year | Année de la session | Extrait à partir de session_date |
+| session_week | Semaine de la session | Extrait à partir de session_date |
+| user_id | Identifiant unique par utilisateur | Attribué |
+| jardin_id | Identifiant unique par jardin | Attribué |
+| geometry | Coordonnées par jardin en format POINT | Remplissage libre |
+| longitude | Longitude du jardin | Extrait à partir de geometry |
+| latitude | Latitude du jardin | Extrait à partir de geometry |
+| dept_code | Département associé au jardin | Calculé à partir de geometry |
+| session_code_zip | Code postal associé au jardin | Texte libre (5 caractères) |
+| taxon | Nom du taxon observé | Liste à choix (se référer à la liste d'observation) |
+| taxon_count | Nombre d'individus maximum observés lors de la session (semaine d'observation) | Remplissage libre |
+| freq_passage | Nombre de jours dans la semaine où une observation a été faite | |
+| type_environnement | Type d'environnement dans lequel se situe le jardin | Liste à choix ("Rural", "Péri-urbain", "Urbain") |
+| jardin_surface | Surface estimée du jardin | Liste à choix ("0-20m2", "20-100m2", "100-200m2", "200-400m2", "400-600m2", "600-1000m2", "1000-1500m2", "1500-2000m2", "2000-2500m2", "2500-3000m2", "3000-4000m2", "4000-5000m2", "+ 5000m2") |
+| distance_bois | Distance séparant le jardin du bois le plus proche | Liste à choix ("0 m", "50 m", "500 m", "1000 m", "2000 m", "+ 2000 m") |
+| distance_champs | Distance séparant le jardin du champ le plus proche | Liste à choix ("0 m", "50 m", "500 m", "1000 m", "2000 m", "+ 2000 m") |
+| distance_prairies | Distance séparant le jardin de la prairie la plus proche | Liste à choix ("0 m", "50 m", "500 m", "1000 m", "2000 m", "+ 2000 m") |
+| type_Engrais | Type d'engrais utilisé | Liste à choix ("Naturels", "Chimiques", NA) |
+| type_Insecticide | Type d'insecticide utilisé | Liste à choix ("Naturels", "Chimiques", NA) |
+| type_Herbicide | Type d'herbicide utilisé | Liste à choix ("Naturels", "Chimiques", NA) |
+| type_Fongicide | Type de fongicide utilisé | Liste à choix ("Naturels", "Chimiques", NA) |
+| type_AntiLimace | Type d'anti-limace utilisé | Liste à choix ("Naturels", "Chimiques", NA) |
+| type_BouillieBordelaise | Type de bouillie bordelaise utilisée | |
+| frequence_Engrais | Fréquence d'utilisation d'un engrais | Liste à choix ("Occasionnellement", "Régulièrement", "Jamais", NA) |
+| frequence_Insecticide | Fréquence d'utilisation d'un insecticide | Liste à choix ("Occasionnellement", "Régulièrement", "Jamais", NA) |
+| frequence_Herbicide | Fréquence d'utilisation d'un herbicide | Liste à choix ("Occasionnellement", "Régulièrement", "Jamais", NA) |
+| frequence_Fongicide | Fréquence d'utilisation d'un fongicide | Liste à choix ("Occasionnellement", "Régulièrement", "Jamais", NA) |
+| frequence_AntiLimace | Fréquence d'utilisation d'un anti-limace | Liste à choix ("Occasionnellement", "Régulièrement", "Jamais", NA) |
+| frequence_BouillieBordelaise | Fréquence d'utilisation de bouillie bordelaise | Liste à choix ("Occasionnellement", "Régulièrement", "Jamais", NA) |
+
+### Problèmes potentiels
+
