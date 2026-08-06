@@ -44,6 +44,7 @@ book:
       chapters:
         - chapters/data-florileges.qmd
         - chapters/data-oab.qmd
+        - chapters/data-opj.qmd
         - chapters/data-propage.qmd
         - chapters/data-qubs_aspifaune.qmd
         - chapters/data-qubs_escargot.qmd
