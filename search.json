@@ -14,7 +14,7 @@
     "href": "chapters/intro-scripts.html",
     "title": "1  Scripts d’export de données",
     "section": "",
-    "text": "1.1 Importer les données brutes\nChaque export de données s’effectue grâce à différentes tâches centralisées dans un script dédié au sein du dossier analyse.\nLe script correspondant doit permettre d’effectuer les tâches suivantes :\nDeux possibilités selon les modalités d’accès aux données :",
+    "text": "1.1 Importer les données brutes\nDeux possibilités selon les modalités d’accès aux données :",
     "crumbs": [
       "Informations générales",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Scripts d'export de données</span>"
@@ -139,6 +139,17 @@
     "crumbs": [
       "Datasets",
       "OAB"
+    ]
+  },
+  {
+    "objectID": "chapters/data-opj.html",
+    "href": "chapters/data-opj.html",
+    "title": "Opération Papillons des Jardins",
+    "section": "",
+    "text": "Programme de suivi des lépidoptères destiné au grand public.\nSite OPJ\n\nDescription des tables et des champs\n\n\n\n\n\n\n\n\nNom du champ\nDescription\nMéthode d’encodage\n\n\n\n\nobservation_id\nIdentifiant unique par observation\nAttribué\n\n\nsession_id\nIdentifiant unique par session (ensemble d’observations)\nAttribué\n\n\nsession_date\nDate de la session\nRemplissage libre\n\n\nsession_year\nAnnée de la session\nExtrait à partir de session_date\n\n\nsession_week\nSemaine de la session\nExtrait à partir de session_date\n\n\nuser_id\nIdentifiant unique par utilisateur\nAttribué\n\n\njardin_id\nIdentifiant unique par jardin\nAttribué\n\n\ngeometry\nCoordonnées par jardin en format POINT\nRemplissage libre\n\n\nlongitude\nLongitude du jardin\nExtrait à partir de geometry\n\n\nlatitude\nLatitude du jardin\nExtrait à partir de geometry\n\n\ndept_code\nDépartement associé au jardin\nCalculé à partir de geometry\n\n\nsession_code_zip\nCode postal associé au jardin\nTexte libre (5 caractères)\n\n\ntaxon\nNom du taxon observé\nListe à choix (se référer à la liste d’observation)\n\n\ntaxon_count\nNombre d’individus maximum observés lors de la session (semaine d’observation)\nRemplissage libre\n\n\nfreq_passage\nNombre de jours dans la semaine où une observation a été faite\n\n\n\ntype_environnement\nType d’environnement dans lequel se situe le jardin\nListe à choix (“Rural”, “Péri-urbain”, “Urbain”)\n\n\njardin_surface\nSurface estimée du jardin\nListe à choix (“0-20m2”, “20-100m2”, “100-200m2”, “200-400m2”, “400-600m2”, “600-1000m2”, “1000-1500m2”, “1500-2000m2”, “2000-2500m2”, “2500-3000m2”, “3000-4000m2”, “4000-5000m2”, “+ 5000m2”)\n\n\ndistance_bois\nDistance séparant le jardin du bois le plus proche\nListe à choix (“0 m”, “50 m”, “500 m”, “1000 m”, “2000 m”, “+ 2000 m”)\n\n\ndistance_champs\nDistance séparant le jardin du champ le plus proche\nListe à choix (“0 m”, “50 m”, “500 m”, “1000 m”, “2000 m”, “+ 2000 m”)\n\n\ndistance_prairies\nDistance séparant le jardin de la prairie la plus proche\nListe à choix (“0 m”, “50 m”, “500 m”, “1000 m”, “2000 m”, “+ 2000 m”)\n\n\ntype_Engrais\nType d’engrais utilisé\nListe à choix (“Naturels”, “Chimiques”, NA)\n\n\ntype_Insecticide\nType d’insecticide utilisé\nListe à choix (“Naturels”, “Chimiques”, NA)\n\n\ntype_Herbicide\nType d’herbicide utilisé\nListe à choix (“Naturels”, “Chimiques”, NA)\n\n\ntype_Fongicide\nType de fongicide utilisé\nListe à choix (“Naturels”, “Chimiques”, NA)\n\n\ntype_AntiLimace\nType d’anti-limace utilisé\nListe à choix (“Naturels”, “Chimiques”, NA)\n\n\ntype_BouillieBordelaise\nType de bouillie bordelaise utilisée\n\n\n\nfrequence_Engrais\nFréquence d’utilisation d’un engrais\nListe à choix (“Occasionnellement”, “Régulièrement”, “Jamais”, NA)\n\n\nfrequence_Insecticide\nFréquence d’utilisation d’un insecticide\nListe à choix (“Occasionnellement”, “Régulièrement”, “Jamais”, NA)\n\n\nfrequence_Herbicide\nFréquence d’utilisation d’un herbicide\nListe à choix (“Occasionnellement”, “Régulièrement”, “Jamais”, NA)\n\n\nfrequence_Fongicide\nFréquence d’utilisation d’un fongicide\nListe à choix (“Occasionnellement”, “Régulièrement”, “Jamais”, NA)\n\n\nfrequence_AntiLimace\nFréquence d’utilisation d’un anti-limace\nListe à choix (“Occasionnellement”, “Régulièrement”, “Jamais”, NA)\n\n\nfrequence_BouillieBordelaise\nFréquence d’utilisation de bouillie bordelaise\nListe à choix (“Occasionnellement”, “Régulièrement”, “Jamais”, NA)\n\n\n\n\n\nProblèmes potentiels",
+    "crumbs": [
+      "Datasets",
+      "Opération Papillons des Jardins"
     ]
   },
   {
