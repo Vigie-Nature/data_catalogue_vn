@@ -1,11 +1,99 @@
 ## Propage {.unnumbered}
 
-Le protocole consiste à dénombrer et identifier les papillons parmi les 38 espèces ou groupes d’espèces proposés en se déplaçant dans un espace vert pendant 10 minutes sur une distance d’environ 100 à 300 mètres. Plusieurs outils sont fournis aux gestionnaires : un livret d’accompagnement au protocole, des fiches de terrain complétées d’un guide d’identification des papillons, disponibles ici et en version papier sur demande à propage\@noe.org, et la possibilité de bénéficier d’une demi-journée de formation à la mise en place du protocole.
+Le protocole consiste à dénombrer et identifier les papillons parmi les 38 espèces ou groupes d’espèces proposés en se déplaçant dans un espace vert pendant 10 minutes sur une distance d’environ 100 à 300 mètres. Plusieurs outils sont fournis aux gestionnaires : un livret d’accompagnement au protocole, des fiches de terrain complétées d’un guide d’identification des papillons, disponibles [ici](https://www.suivis-espaces-verts.fr/downloads/editos/edito5/propage_guide_papillons.pdf) et en version papier sur demande à propage\@noe.org, et la possibilité de bénéficier d’une demi-journée de formation à la mise en place du protocole.
 
 [Site de Propage](https://www.vigienature.fr/fr/propage)
 
 ### Description des tables et des champs
 
 [champs export propage](https://docs.google.com/spreadsheets/d/1v9Sd7cNzvrDxbCi9u0tnKZgz2Op6j7k2owASv5aepNU/edit?gid=630811929#gid=630811929)
+
+| Nom du champ | Description | Méthode d'encodage |
+|-------------------------|--------------------------|-------------------------|
+| observation_id | Identifiant unique par observation | Attribué |
+| session_id | Identifiant unique par session (ensemble d'observations) | Attribué |
+| protocole | Nom du protocole | |
+| structure_id | Identifiant unique | Attribué |
+| structure_nom | Nom de la structure | |
+| user_id | Identifiant unique par utilisateur | Attribué |
+| site_id | Identifiant unique par site | Attribué |
+| site | Nom du site | |
+| site_geometry | Géométrie du site (format polygone) | |
+| site_departement | Département associé au site | |
+| site_zip_code | Code postal associé au site | |
+| surface | Surface du site en m^2 | |
+| objectifs | Usage du site | Liste à choix |
+| objectifs_autre | Usage du site | Remplissage libre |
+| frequentation | Estimation de la fréquentation du site (facteur qualitatif) | Liste à choix ("Nulle", "Faible", "Forte", NA)
+| occupations_sol_anterieures
+| occupations_sol_anterieures_autre
+| travaux_anterieurs
+| travaux_anterieurs_autre
+| travaux_sol_anterieurs
+| travaux_sol_anterieurs_autre
+| frequence_travail_sol
+| frequence_travail_sol_autre
+| frequence_travail_sol_regulier
+| amendements
+| frequence_amendement
+| frequence_amendement_autre
+| frequence_amendement_regulier
+| transect_nom
+| transect_geometry
+| transect_description
+| transect_habitat
+| transect_type_prairie
+| transect_paturage_prairie
+| transect_rythme_fauchage_prairie
+| transect_paturage_friche
+| transect_rythme_fauchage_friche
+| transect_rythme_arbustes_friche
+| transect_type_arbres_square
+| transect_type_plantes_square
+| transect_frequence_tontes
+| transect_type_arbres_gazon
+| transect_type_plantes_gazon	
+| transect_type_plantations
+| transect_plantes_ornementales
+| transect_plantes_aromatiques	
+| transect_type_allees
+| transect_type_arbres_cimetiere
+| transect_arbustes_infrastructures	
+| transect_rythme_fauchage_infrastructures
+| transect_environnement	
+| transect_type_arbres_lisiere
+| session_date
+| session_starting_time
+| session_ending_time	
+| temperature
+| vent
+| couverture_nuageuse
+| hauteur_vegetation
+| milieux
+| milieux_autre	
+| semis_sursemis
+| fauche
+| periodes_fauches
+| frequence_fauches
+| paturages
+| paturages_autre
+| pression_paturage
+| duree_annuelle_paturage
+| exportation_residus
+| traitements_phyto	
+| traitements_phyto_autre
+| pressions
+| pressions_autre
+| commentaire
+| taxon
+| taxon_nom_scientifique	
+| cd_nom
+| taxon_count
+| session_duration
+| site_longitude
+| site_latitude
+| transect_longitude
+| transect_latitude
+
 
 ### Problèmes potentiels
