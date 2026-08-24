@@ -255,11 +255,442 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Le protocole consiste à dénombrer et identifier les papillons parmi les 38 espèces ou groupes d’espèces proposés en se déplaçant dans un espace vert pendant 10 minutes sur une distance d’environ 100 à 300 mètres. Plusieurs outils sont fournis aux gestionnaires : un livret d’accompagnement au protocole, des fiches de terrain complétées d’un guide d’identification des papillons, disponibles ici et en version papier sur demande à propage@noe.org, et la possibilité de bénéficier d’une demi-journée de formation à la mise en place du protocole.</p>
+<p>Le protocole consiste à dénombrer et identifier les papillons parmi les 38 espèces ou groupes d’espèces proposés en se déplaçant dans un espace vert pendant 10 minutes sur une distance d’environ 100 à 300 mètres. Plusieurs outils sont fournis aux gestionnaires : un livret d’accompagnement au protocole, des fiches de terrain complétées d’un guide d’identification des papillons, disponibles <a href="https://www.suivis-espaces-verts.fr/downloads/editos/edito5/propage_guide_papillons.pdf">ici</a> et en version papier sur demande à propage@noe.org, et la possibilité de bénéficier d’une demi-journée de formation à la mise en place du protocole.</p>
 <p><a href="https://www.vigienature.fr/fr/propage">Site de Propage</a></p>
 <section id="description-des-tables-et-des-champs" class="level3">
 <h3 class="anchored" data-anchor-id="description-des-tables-et-des-champs">Description des tables et des champs</h3>
 <p><a href="https://docs.google.com/spreadsheets/d/1v9Sd7cNzvrDxbCi9u0tnKZgz2Op6j7k2owASv5aepNU/edit?gid=630811929#gid=630811929">champs export propage</a></p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Nom du champ</th>
+<th>Description</th>
+<th>Méthode d’encodage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>observation_id</td>
+<td>Identifiant unique par observation</td>
+<td>Attribué</td>
+</tr>
+<tr class="even">
+<td>session_id</td>
+<td>Identifiant unique par session (ensemble d’observations)</td>
+<td>Attribué</td>
+</tr>
+<tr class="odd">
+<td>protocole</td>
+<td>Nom du protocole</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>structure_id</td>
+<td>Identifiant unique</td>
+<td>Attribué</td>
+</tr>
+<tr class="odd">
+<td>structure_nom</td>
+<td>Nom de la structure</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>user_id</td>
+<td>Identifiant unique par utilisateur</td>
+<td>Attribué</td>
+</tr>
+<tr class="odd">
+<td>site_id</td>
+<td>Identifiant unique par site</td>
+<td>Attribué</td>
+</tr>
+<tr class="even">
+<td>site</td>
+<td>Nom du site</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>site_geometry</td>
+<td>Géométrie du site (format polygone)</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>site_departement</td>
+<td>Département associé au site</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>site_zip_code</td>
+<td>Code postal associé au site</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>surface</td>
+<td>Surface du site en m^2</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>objectifs</td>
+<td>Usage du site</td>
+<td>Liste à choix</td>
+</tr>
+<tr class="even">
+<td>objectifs_autre</td>
+<td>Usage du site</td>
+<td>Remplissage libre</td>
+</tr>
+<tr class="odd">
+<td>frequentation</td>
+<td>Estimation de la fréquentation du site (facteur qualitatif)</td>
+<td>Liste à choix (“Nulle”, “Faible”, “Forte”, NA)</td>
+</tr>
+<tr class="even">
+<td>occupations_sol_anterieures</td>
+<td>Type(s) d’occupation antérieure du sol (liste fermée)</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>occupations_sol_anterieures_autre</td>
+<td>Type(s) d’occupation antérieure du sol</td>
+<td>Remplissage libre</td>
+</tr>
+<tr class="even">
+<td>travaux_anterieurs</td>
+<td>Type(s) de travaux antérieurs (liste fermée)</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>travaux_anterieurs_autre</td>
+<td>Type(s) de travaux antérieurs</td>
+<td>Remplissage libre</td>
+</tr>
+<tr class="even">
+<td>travaux_sol_anterieurs</td>
+<td>Type(s) de travaux du sol antérieurs (liste fermée)</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>travaux_sol_anterieurs_autre</td>
+<td>Type(s) de travaux du sol antérieurs</td>
+<td>Remplissage libre</td>
+</tr>
+<tr class="even">
+<td>frequence_travail_sol</td>
+<td>Fréquence des travaux du sol (liste fermée)</td>
+<td>Liste à choix (“A la mise en place”, “Aucun”, “Autre”, “Je ne sais pas”, “Régulier”, NA)</td>
+</tr>
+<tr class="odd">
+<td>frequence_travail_sol_autre</td>
+<td>Si fréquence “Autre”, possibilité de préciser</td>
+<td>Remplissage libre</td>
+</tr>
+<tr class="even">
+<td>frequence_travail_sol_regulier</td>
+<td>Si fréquence “Régulier”, possibilité de préciser</td>
+<td>Remplissage libre</td>
+</tr>
+<tr class="odd">
+<td>amendements</td>
+<td>Type(s) d’amendement du sol</td>
+<td>Liste à choix (“Aucun”, “Autre”, “Compost”, “Engrais chimique”, “Engrais organique”, “Fumier”, “Je ne sais pas”)</td>
+</tr>
+<tr class="even">
+<td>frequence_amendement</td>
+<td>Fréquence des amendements (liste fermée)</td>
+<td>Liste à choix (“A la mise en place”, “Aucun”, “Autre”, “Je ne sais pas”, “Régulier”, NA)</td>
+</tr>
+<tr class="odd">
+<td>frequence_amendement_autre</td>
+<td>Si fréquence “Autre”, possibilité de préciser</td>
+<td>Remplissage libre</td>
+</tr>
+<tr class="even">
+<td>frequence_amendement_regulier</td>
+<td>Si fréquence “Régulier”, possibilité de préciser</td>
+<td>Remplissage libre</td>
+</tr>
+<tr class="odd">
+<td>transect_nom</td>
+<td>Nom du transect</td>
+<td>Remplissage libre</td>
+</tr>
+<tr class="even">
+<td>transect_geometry</td>
+<td>Tracé géométrique du transect</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>transect_description</td>
+<td>Description du transect</td>
+<td>Texte libre</td>
+</tr>
+<tr class="even">
+<td>transect_habitat</td>
+<td>Type d’habitat dans lequel est situé le transect</td>
+<td>Liste à choix (“Bords d’infrastructures de transport (routes, voies ferrées…)”, “Cimetière”, “Friche”, “Gazon”, “Jardin horticole / Jardin potager”, “Lisière de bois ou de forêt”, “Prairie”, “Square urbain (mixte surface pelouse / surfaces non végétalisées)”)</td>
+</tr>
+<tr class="odd">
+<td>transect_type_prairie</td>
+<td>Si le transect est classé en “Prairie” -&gt; type de prairie</td>
+<td>Liste à choix (“Prairie humide”, “Prairie sans distinction”, “Prairie sèche (calcicole)”, “Prairie semée”)</td>
+</tr>
+<tr class="even">
+<td>transect_paturage_prairie</td>
+<td>Si le transect est classé en “Prairie” -&gt; présence de pâturage ou non</td>
+<td>Liste à choix (“Pâturée”, “Non pâturée”, NA)</td>
+</tr>
+<tr class="odd">
+<td>transect_rythme_fauchage_prairie</td>
+<td>Si le transect est classé en “Prairie” -&gt; rythme de la fauche</td>
+<td>Liste à choix (“Fauche précoce”, “Fauche tardive”, “Non fauchée”, “Plusieurs fauches”, NA)</td>
+</tr>
+<tr class="even">
+<td>transect_paturage_friche</td>
+<td>Si le transect est classé en “Friche” -&gt; présence de pâturage ou non</td>
+<td>Liste à choix (“Pâturée”, “Non pâturée”, NA)</td>
+</tr>
+<tr class="odd">
+<td>transect_rythme_fauchage_friche</td>
+<td>Si le transect est classé en “Friche” -&gt; rythme de la fauche</td>
+<td>Liste à choix (“Fauche précoce”, “Fauche tardive”, “Non fauchée”, “Plusieurs fauches”, NA)</td>
+</tr>
+<tr class="even">
+<td>transect_rythme_arbustes_friche</td>
+<td>Si le transect est classé en “Friche” -&gt; présence d’arbuste ou non</td>
+<td>Liste à choix (“Absence d’arbuste”, “Présence d’arbustes”, NA)</td>
+</tr>
+<tr class="odd">
+<td>transect_type_arbres_square</td>
+<td>Si le transect est classé en “Square” -&gt; type d’arbres</td>
+<td>Liste à choix (“Mixte conifères / feuillus”, “Présence de conifères”, “Présence de feuillus”, “Sans arbre”, NA)</td>
+</tr>
+<tr class="even">
+<td>transect_type_plantes_square</td>
+<td>Si le transect est classé en “Square” -&gt; type de plantes présentes</td>
+<td>Liste à choix (“Avec composition de plantes annuelles”, “Avec composition de plantes vivaces”, “Avec composition de plantes vivaces et annuelles”, “Sans parterre de fleurs”, NA)</td>
+</tr>
+<tr class="odd">
+<td>transect_frequence_tontes</td>
+<td>Fréquence des tontes</td>
+<td>Liste à choix (“&lt; 5 tontes par an”, “&gt; 10 tontes par an”, “Entre 5 et 10 tontes par an”, “Pas de tonte”, NA)</td>
+</tr>
+<tr class="even">
+<td>transect_type_arbres_gazon</td>
+<td>Si le transect est classé en “Gazon” -&gt; type d’arbres</td>
+<td>Liste à choix (“Mixte conifères / feuillus”, “Présence de conifères”, “Présence de feuillus”, “Sans arbre”, NA)</td>
+</tr>
+<tr class="odd">
+<td>transect_type_plantes_gazon</td>
+<td>Si le transect est classé en “Gazon” -&gt; type de plantes présentes</td>
+<td>Liste à choix (“Avec composition de plantes annuelles”, “Avec composition de plantes vivaces”, “Avec composition de plantes vivaces et annuelles”, “Sans parterre de fleurs”, NA)</td>
+</tr>
+<tr class="even">
+<td>transect_type_plantations</td>
+<td>Type de plantation</td>
+<td>Liste à choix (“Potager”, “Sans verger ni potager”, “Verger”, “Verger et potager”, NA)</td>
+</tr>
+<tr class="odd">
+<td>transect_plantes_ornementales</td>
+<td>Présence de plantes ornementales</td>
+<td>Liste à choix (“Avec plantes ornementales”, “Sans plantes ornementales”, NA)</td>
+</tr>
+<tr class="even">
+<td>transect_plantes_aromatiques</td>
+<td>Présence de plantes ornementales</td>
+<td>Liste à choix (“Avec plantes ornementales”, “Sans plantes ornementales”, NA)</td>
+</tr>
+<tr class="odd">
+<td>transect_type_allees</td>
+<td>Type d’allée</td>
+<td>Liste à choix (“Artificialisé (allée bétonnées, graviers, …)”, “Non artificialisé (allées enherbées)”, NA)</td>
+</tr>
+<tr class="even">
+<td>transect_type_arbres_cimetiere</td>
+<td>Si le transect est classé en “Cimetière” -&gt; type d’arbres</td>
+<td>Liste à choix (“Mixte conifères / feuillus”, “Présence de conifères”, “Présence de feuillus”, “Sans arbre”, NA)</td>
+</tr>
+<tr class="odd">
+<td>transect_arbustes_infrastructures</td>
+<td>Si le transect est classé en “Bords d’infrastructure” -&gt; présence ou non d’arbuste</td>
+<td>Liste à choix (“Absence d’arbuste”, “Présence d’arbustes”, NA)</td>
+</tr>
+<tr class="even">
+<td>transect_rythme_fauchage_infrastructures</td>
+<td>Si le transect est classé en “Bords d’infrastructure” -&gt; rythme de la fauche</td>
+<td>Liste à choix (“Fauche précoce”, “Fauche tardive”, “Non fauchée”, “Plusieurs fauches”, NA)</td>
+</tr>
+<tr class="odd">
+<td>transect_environnement</td>
+<td>Type d’environnement du transect</td>
+<td>Liste à choix (“Environnement agricole (élevage, grandes cultures…)”, “Environnement naturel (forêt, zone humide…)”, “Environnement urbain”, NA)</td>
+</tr>
+<tr class="even">
+<td>transect_type_arbres_lisiere</td>
+<td>Si le transect est classé en “Lisière de bois ou de forêt” -&gt; type d’arbre</td>
+<td>Liste à choix (“Dominance de conifères”, “Dominance de feuillus”, “Fruticée”, NA)</td>
+</tr>
+<tr class="odd">
+<td>session_date</td>
+<td>Date de la session</td>
+<td>Remplissage libre</td>
+</tr>
+<tr class="even">
+<td>session_starting_time</td>
+<td>Heure de début de la session</td>
+<td>Remplissage libre</td>
+</tr>
+<tr class="odd">
+<td>session_ending_time</td>
+<td>Heure de fin de la session</td>
+<td>Remplissage libre</td>
+</tr>
+<tr class="even">
+<td>temperature</td>
+<td>Température évaluée lors de la session</td>
+<td>Liste à choix (“&lt;13°C”, “13-15°C”, “16-20°C”, “21-25°C”, “26-30°C”, “31-35°C”, “&gt;35°C”, NA)</td>
+</tr>
+<tr class="odd">
+<td>vent</td>
+<td>Vitesse du vent évaluée lors de la session</td>
+<td>Liste à choix (“0 Beaufort (0km/h)”, “1 Beaufort (1-5km/h)”, “2 Beaufort (6-11km/h)”, “3 Beaufort (12-19km/h)”, “4 Beaufort (20-28km/h)”, “5 Beaufort (29-38km/h)”, NA)</td>
+</tr>
+<tr class="even">
+<td>couverture_nuageuse</td>
+<td>Couverture nuageuse estimée lors de la session</td>
+<td>Liste à choix (“Ciel dégagé”, “nuages 0-25%”, “nuages 26-50%”, “nuages 51-75%”, “nuages 76-100%”, “Soleil voilé”, NA)</td>
+</tr>
+<tr class="odd">
+<td>hauteur_vegetation</td>
+<td>Hauteur de la végétation</td>
+<td>Liste à choix (“&lt; 20cm”, “Entre 20 et 50cm”, “Entre 50cm et 1m”, “&gt; 1m”)</td>
+</tr>
+<tr class="even">
+<td>milieux</td>
+<td></td>
+<td>Liste à choix</td>
+</tr>
+<tr class="odd">
+<td>milieux_autre</td>
+<td></td>
+<td>Remplissage libre</td>
+</tr>
+<tr class="even">
+<td>semis_sursemis</td>
+<td>Présence de sursemis</td>
+<td>Liste à choix (“Oui”, “Non”, “Je ne sais pas”, NA)</td>
+</tr>
+<tr class="odd">
+<td>fauche</td>
+<td>Type de fauche</td>
+<td>Liste à choix (“Fauche(s) / tonte(s) broyée(s) (rotofil, gyrobroyage)”, “Fauche(s) / tonte(s) coupée(s) (lame, faux, tondeuse)”, “Je ne sais pas”, “Pas de fauche(s) / tonte(s)”, NA)</td>
+</tr>
+<tr class="even">
+<td>periodes_fauches</td>
+<td>Période(s) de fauche</td>
+<td>Liste à choix multiple (“estivale-(juin-aout)”, “precoce-(janvier-mai)”, “tardive-(septembre—decembre)”, “je-ne-sais-pas”, ““)</td>
+</tr>
+<tr class="odd">
+<td>frequence_fauches</td>
+<td>Nombre de fauche par an</td>
+<td>Liste à choix (“&lt; 1/an”, “1/an”, “2/an”, “&gt; 2/an”, “Je ne sais pas”, NA)</td>
+</tr>
+<tr class="even">
+<td>paturages</td>
+<td>Type(s) de pâturage</td>
+<td>Liste à choix multiple (“autre”, “bovin”, “caprin”, “equide”, “ovin”, “pas-de-paturage”, “je-ne-sais-pas”, ““)</td>
+</tr>
+<tr class="odd">
+<td>paturages_autre</td>
+<td>Type de pâturage complémentaire</td>
+<td>Remplissage libre</td>
+</tr>
+<tr class="even">
+<td>pression_paturage</td>
+<td>Pression du pâturage</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>duree_annuelle_paturage</td>
+<td>Durée annuelle du pâturage</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>exportation_residus</td>
+<td>Exportation ou non des résidus</td>
+<td>Liste à choix (“Non”, “Oui”, “Je ne sais pas”, NA)</td>
+</tr>
+<tr class="odd">
+<td>traitements_phyto</td>
+<td>Type(s) de traitement phytosanitaire</td>
+<td>Liste à choix multiple (“anti-limaces”, “aucun”, “autre”, “fongicide”, “herbicide”, “je-ne-sais-pas”, ““)</td>
+</tr>
+<tr class="even">
+<td>traitements_phyto_autre</td>
+<td>Type de traitement phytosanitaire complémentaire</td>
+<td>Remplissage libre</td>
+</tr>
+<tr class="odd">
+<td>pressions</td>
+<td>Pression(s) sur le milieu</td>
+<td>Liste à choix multiple (“aucune”, “autre”, “cueillette”, “incendies”, “paturage-et-terriers-par-les-lapins-et-rongeurs”, “travaux-sur-la-parcelle”, “je-ne-sais-pas”, ““)</td>
+</tr>
+<tr class="even">
+<td>pressions_autre</td>
+<td>Pression sur le milieu complémentaire</td>
+<td>Remplissage libre</td>
+</tr>
+<tr class="odd">
+<td>commentaire</td>
+<td>Commentaire libre</td>
+<td>Remplissage libre</td>
+</tr>
+<tr class="even">
+<td>taxon</td>
+<td>Nom du taxon observé</td>
+<td>Liste de <a href="https://www.suivis-espaces-verts.fr/downloads/editos/edito5/propage_guide_papillons.pdf">taxons Propage</a></td>
+</tr>
+<tr class="odd">
+<td>taxon_nom_scientifique</td>
+<td>Nom scientifique du taxon observé</td>
+<td>Liste de <a href="https://www.suivis-espaces-verts.fr/downloads/editos/edito5/propage_guide_papillons.pdf">taxons Propage</a></td>
+</tr>
+<tr class="even">
+<td>cd_nom</td>
+<td>Code taxref</td>
+<td>Attribué</td>
+</tr>
+<tr class="odd">
+<td>taxon_count</td>
+<td>Nombre d’individus observés</td>
+<td>Remplissage libre</td>
+</tr>
+<tr class="even">
+<td>session_duration</td>
+<td>Durée de la session (en secondes)</td>
+<td>Calculé automatiquement</td>
+</tr>
+<tr class="odd">
+<td>site_longitude</td>
+<td>Longitude du barycentre du site</td>
+<td>Calculé automatiquement</td>
+</tr>
+<tr class="even">
+<td>site_latitude</td>
+<td>Latitude du barycentre du site</td>
+<td>Calculé automatiquement</td>
+</tr>
+<tr class="odd">
+<td>transect_longitude</td>
+<td>Longitude du barycentre du transect</td>
+<td>Calculé automatiquement</td>
+</tr>
+<tr class="even">
+<td>transect_latitude</td>
+<td>Latitude du barycentre du transect</td>
+<td>Calculé automatiquement</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="problèmes-potentiels" class="level3">
 <h3 class="anchored" data-anchor-id="problèmes-potentiels">Problèmes potentiels</h3>
