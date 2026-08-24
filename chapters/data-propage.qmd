@@ -24,76 +24,76 @@ Le protocole consiste à dénombrer et identifier les papillons parmi les 38 esp
 | surface | Surface du site en m^2 | |
 | objectifs | Usage du site | Liste à choix |
 | objectifs_autre | Usage du site | Remplissage libre |
-| frequentation | Estimation de la fréquentation du site (facteur qualitatif) | Liste à choix ("Nulle", "Faible", "Forte", NA)
-| occupations_sol_anterieures
-| occupations_sol_anterieures_autre
-| travaux_anterieurs
-| travaux_anterieurs_autre
-| travaux_sol_anterieurs
-| travaux_sol_anterieurs_autre
-| frequence_travail_sol
-| frequence_travail_sol_autre
-| frequence_travail_sol_regulier
-| amendements
-| frequence_amendement
-| frequence_amendement_autre
-| frequence_amendement_regulier
-| transect_nom
-| transect_geometry
-| transect_description
-| transect_habitat
-| transect_type_prairie
-| transect_paturage_prairie
-| transect_rythme_fauchage_prairie
-| transect_paturage_friche
-| transect_rythme_fauchage_friche
-| transect_rythme_arbustes_friche
-| transect_type_arbres_square
-| transect_type_plantes_square
-| transect_frequence_tontes
-| transect_type_arbres_gazon
-| transect_type_plantes_gazon	
-| transect_type_plantations
-| transect_plantes_ornementales
-| transect_plantes_aromatiques	
-| transect_type_allees
-| transect_type_arbres_cimetiere
-| transect_arbustes_infrastructures	
-| transect_rythme_fauchage_infrastructures
-| transect_environnement	
-| transect_type_arbres_lisiere
-| session_date
-| session_starting_time
-| session_ending_time	
-| temperature
-| vent
-| couverture_nuageuse
-| hauteur_vegetation
-| milieux
-| milieux_autre	
-| semis_sursemis
-| fauche
-| periodes_fauches
-| frequence_fauches
-| paturages
-| paturages_autre
-| pression_paturage
-| duree_annuelle_paturage
-| exportation_residus
-| traitements_phyto	
-| traitements_phyto_autre
-| pressions
-| pressions_autre
-| commentaire
-| taxon
-| taxon_nom_scientifique	
-| cd_nom
-| taxon_count
-| session_duration
-| site_longitude
-| site_latitude
-| transect_longitude
-| transect_latitude
+| frequentation | Estimation de la fréquentation du site (facteur qualitatif) | Liste à choix ("Nulle", "Faible", "Forte", NA) |
+| occupations_sol_anterieures | Type(s) d'occupation antérieure du sol (liste fermée) | |
+| occupations_sol_anterieures_autre | Type(s) d'occupation antérieure du sol | Remplissage libre |
+| travaux_anterieurs | Type(s) de travaux antérieurs (liste fermée) | |
+| travaux_anterieurs_autre | Type(s) de travaux antérieurs | Remplissage libre |
+| travaux_sol_anterieurs | Type(s) de travaux du sol antérieurs (liste fermée) | |
+| travaux_sol_anterieurs_autre | Type(s) de travaux du sol antérieurs | Remplissage libre |
+| frequence_travail_sol | Fréquence des travaux du sol (liste fermée) | Liste à choix ("A la mise en place", "Aucun", "Autre", "Je ne sais pas", "Régulier", NA) |
+| frequence_travail_sol_autre | Si fréquence "Autre", possibilité de préciser | Remplissage libre |
+| frequence_travail_sol_regulier | Si fréquence "Régulier", possibilité de préciser | Remplissage libre |
+| amendements | Type(s) d'amendement du sol | Liste à choix ("Aucun", "Autre", "Compost", "Engrais chimique", "Engrais organique", "Fumier", "Je ne sais pas") |
+| frequence_amendement | Fréquence des amendements (liste fermée) | Liste à choix ("A la mise en place", "Aucun", "Autre", "Je ne sais pas", "Régulier", NA) |
+| frequence_amendement_autre | Si fréquence "Autre", possibilité de préciser | Remplissage libre |
+| frequence_amendement_regulier | Si fréquence "Régulier", possibilité de préciser | Remplissage libre |
+| transect_nom | Nom du transect | Remplissage libre |
+| transect_geometry | Tracé géométrique du transect | |
+| transect_description | Description du transect | Texte libre |
+| transect_habitat | Type d'habitat dans lequel est situé le transect | Liste à choix ("Bords d’infrastructures de transport (routes, voies ferrées...)", "Cimetière", "Friche", "Gazon", "Jardin horticole / Jardin potager", "Lisière de bois ou de forêt", "Prairie", "Square urbain (mixte surface pelouse / surfaces non végétalisées)") |
+| transect_type_prairie | Si le transect est classé en "Prairie" -> type de prairie | Liste à choix ("Prairie humide", "Prairie sans distinction", "Prairie sèche (calcicole)", "Prairie semée") |
+| transect_paturage_prairie | Si le transect est classé en "Prairie" -> présence de pâturage ou non | Liste à choix ("Pâturée", "Non pâturée", NA) |
+| transect_rythme_fauchage_prairie | Si le transect est classé en "Prairie" -> rythme de la fauche | Liste à choix ("Fauche précoce", "Fauche tardive", "Non fauchée", "Plusieurs fauches", NA) |
+| transect_paturage_friche | Si le transect est classé en "Friche" -> présence de pâturage ou non | Liste à choix ("Pâturée", "Non pâturée", NA) |
+| transect_rythme_fauchage_friche | Si le transect est classé en "Friche" -> rythme de la fauche | Liste à choix ("Fauche précoce", "Fauche tardive", "Non fauchée", "Plusieurs fauches", NA) |
+| transect_rythme_arbustes_friche | Si le transect est classé en "Friche" -> présence d'arbuste ou non | Liste à choix ("Absence d'arbuste", "Présence d’arbustes", NA) |
+| transect_type_arbres_square| Si le transect est classé en "Square" -> type d'arbres | Liste à choix ("Mixte conifères / feuillus", "Présence de conifères", "Présence de feuillus", "Sans arbre", NA) |
+| transect_type_plantes_square | Si le transect est classé en "Square" -> type de plantes présentes | Liste à choix ("Avec composition de plantes annuelles", "Avec composition de plantes vivaces", "Avec composition de plantes vivaces et annuelles", "Sans parterre de fleurs", NA) |
+| transect_frequence_tontes | Fréquence des tontes | Liste à choix ("< 5 tontes par an", "> 10 tontes par an", "Entre 5 et 10 tontes par an", "Pas de tonte", NA) |
+| transect_type_arbres_gazon | Si le transect est classé en "Gazon" -> type d'arbres | Liste à choix ("Mixte conifères / feuillus", "Présence de conifères", "Présence de feuillus", "Sans arbre", NA) |
+| transect_type_plantes_gazon | Si le transect est classé en "Gazon" -> type de plantes présentes | Liste à choix ("Avec composition de plantes annuelles", "Avec composition de plantes vivaces", "Avec composition de plantes vivaces et annuelles", "Sans parterre de fleurs", NA) |
+| transect_type_plantations | Type de plantation | Liste à choix ("Potager", "Sans verger ni potager", "Verger", "Verger et potager", NA)
+| transect_plantes_ornementales | Présence de plantes ornementales | Liste à choix ("Avec plantes ornementales", "Sans plantes ornementales", NA) |
+| transect_plantes_aromatiques | Présence de plantes ornementales | Liste à choix ("Avec plantes ornementales", "Sans plantes ornementales", NA) |
+| transect_type_allees | Type d'allée | Liste à choix ("Artificialisé (allée bétonnées, graviers, ...)", "Non artificialisé (allées enherbées)", NA) |
+| transect_type_arbres_cimetiere | Si le transect est classé en "Cimetière" -> type d'arbres | Liste à choix ("Mixte conifères / feuillus", "Présence de conifères", "Présence de feuillus", "Sans arbre", NA) |
+| transect_arbustes_infrastructures	| Si le transect est classé en "Bords d'infrastructure" -> présence ou non d'arbuste | Liste à choix ("Absence d’arbuste", "Présence d’arbustes", NA) |
+| transect_rythme_fauchage_infrastructures | Si le transect est classé en "Bords d'infrastructure" -> rythme de la fauche | Liste à choix ("Fauche précoce", "Fauche tardive", "Non fauchée", "Plusieurs fauches", NA) |
+| transect_environnement | Type d'environnement du transect | Liste à choix ("Environnement agricole (élevage, grandes cultures...)", "Environnement naturel (forêt, zone humide...)", "Environnement urbain", NA) |
+| transect_type_arbres_lisiere | Si le transect est classé en "Lisière de bois ou de forêt" -> type d'arbre | Liste à choix ("Dominance de conifères", "Dominance de feuillus", "Fruticée", NA) |
+| session_date | Date de la session | Remplissage libre |
+| session_starting_time | Heure de début de la session | Remplissage libre |
+| session_ending_time	| Heure de fin de la session | Remplissage libre |
+| temperature | Température évaluée lors de la session | Liste à choix ("<13°C", "13-15°C", "16-20°C", "21-25°C", "26-30°C", "31-35°C", ">35°C", NA) |
+| vent | Vitesse du vent évaluée lors de la session | Liste à choix ("0 Beaufort (0km/h)", "1 Beaufort (1-5km/h)", "2 Beaufort (6-11km/h)", "3 Beaufort (12-19km/h)", "4 Beaufort (20-28km/h)", "5 Beaufort (29-38km/h)", NA) |
+| couverture_nuageuse | Couverture nuageuse estimée lors de la session | Liste à choix ("Ciel dégagé", "nuages 0-25%", "nuages 26-50%", "nuages 51-75%", "nuages 76-100%", "Soleil voilé", NA) |
+| hauteur_vegetation | Hauteur de la végétation | Liste à choix ("< 20cm", "Entre 20 et 50cm", "Entre 50cm et 1m", "> 1m") |
+| milieux | | Liste  à choix |
+| milieux_autre	 | | Remplissage libre |
+| semis_sursemis | Présence de sursemis | Liste à choix ("Oui", "Non", "Je ne sais pas", NA) |
+| fauche | Type de fauche | Liste à choix ("Fauche(s) / tonte(s) broyée(s) (rotofil, gyrobroyage)", "Fauche(s) / tonte(s) coupée(s) (lame, faux, tondeuse)", "Je ne sais pas", "Pas de fauche(s) / tonte(s)", NA) |
+| periodes_fauches | Période(s) de fauche | Liste à choix multiple ("estivale-(juin-aout)", "precoce-(janvier-mai)", "tardive-(septembre---decembre)", "je-ne-sais-pas", "") |
+| frequence_fauches | Nombre de fauche par an | Liste à choix ("< 1/an", "1/an", "2/an", "> 2/an", "Je ne sais pas", NA) |
+| paturages | Type(s) de pâturage | Liste à choix multiple ("autre", "bovin", "caprin", "equide", "ovin", "pas-de-paturage", "je-ne-sais-pas", "") |
+| paturages_autre | Type de pâturage complémentaire | Remplissage libre |
+| pression_paturage | Pression du pâturage | |
+| duree_annuelle_paturage | Durée annuelle du pâturage | |
+| exportation_residus | Exportation ou non des résidus | Liste à choix ("Non", "Oui", "Je ne sais pas", NA) |
+| traitements_phyto	| Type(s) de traitement phytosanitaire | Liste à choix multiple ("anti-limaces", "aucun", "autre", "fongicide", "herbicide", "je-ne-sais-pas", "") |
+| traitements_phyto_autre | Type de traitement phytosanitaire complémentaire | Remplissage libre |
+| pressions | Pression(s) sur le milieu | Liste à choix multiple ("aucune", "autre", "cueillette", "incendies", "paturage-et-terriers-par-les-lapins-et-rongeurs", "travaux-sur-la-parcelle", "je-ne-sais-pas", "") |
+| pressions_autre | Pression sur le milieu complémentaire | Remplissage libre |
+| commentaire | Commentaire libre | Remplissage libre |
+| taxon | Nom du taxon observé | Liste de [taxons Propage](https://www.suivis-espaces-verts.fr/downloads/editos/edito5/propage_guide_papillons.pdf) |
+| taxon_nom_scientifique | Nom scientifique du taxon observé | Liste de [taxons Propage](https://www.suivis-espaces-verts.fr/downloads/editos/edito5/propage_guide_papillons.pdf) |
+| cd_nom | Code taxref | Attribué |
+| taxon_count | Nombre d'individus observés | Remplissage libre |
+| session_duration | Durée de la session (en secondes) | Calculé automatiquement |
+| site_longitude | Longitude du barycentre du site | Calculé automatiquement |
+| site_latitude | Latitude du barycentre du site | Calculé automatiquement |
+| transect_longitude | Longitude du barycentre du transect | Calculé automatiquement |
+| transect_latitude | Latitude du barycentre du transect | Calculé automatiquement |
 
 
 ### Problèmes potentiels
