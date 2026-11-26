@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.0">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Description des exports de données des observatoires Vigie-Nature  ">
+
+<title>Vigie-Nature Data Catalogue - STOC EPS</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<link href="../chapters/references.html" rel="next">
+<link href="../chapters/data-sterf.html" rel="prev">
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/data-florileges.html">Datasets</a></li><li class="breadcrumb-item"><a href="../chapters/data-stoc-eps.html">STOC EPS</a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Vigie-Nature Data Catalogue</a> 
+    </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+ <span class="menu-text">Informations générales</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/intro-scripts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Scripts d’export de données</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/intro-gettingstarted.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Getting started</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/intro-tutorials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Tutoriels</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Datasets</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/data-florileges.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Florilèges</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/data-oab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">OAB</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/data-opj.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Opération Papillons des Jardins</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/data-propage.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Propage</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/data-qubs_aspifaune.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">QUBS Aspifaune</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/data-qubs_escargot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">QUBS escargot</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/data-qubs_noctambules.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">QUBS Noctambules</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/data-qubs_vers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">QUBS vers</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/data-shoc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SHOC</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/data-spipoll.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Spipoll</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/data-steli.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Steli</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/data-sterf.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sterf</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/data-stoc-eps.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">STOC EPS</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+ <span class="menu-text">Resources</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#protocole-et-saisie" id="toc-protocole-et-saisie" class="nav-link active" data-scroll-target="#protocole-et-saisie">Protocole et saisie</a></li>
+  <li><a href="#structures-de-données" id="toc-structures-de-données" class="nav-link" data-scroll-target="#structures-de-données">Structures de données</a></li>
+  <li><a href="#détails-des-exports" id="toc-détails-des-exports" class="nav-link" data-scroll-target="#détails-des-exports">Détails des exports</a></li>
+  <li><a href="#listes-despèces" id="toc-listes-despèces" class="nav-link" data-scroll-target="#listes-despèces">Listes d’espèces</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/data-florileges.html">Datasets</a></li><li class="breadcrumb-item"><a href="../chapters/data-stoc-eps.html">STOC EPS</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">STOC EPS</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>L’objectif est de suivre les populations d’oiseaux communs sur des carrés répartis aléatoirement. Dans chaque carré, sont notés tous les oiseaux vus ou entendus pendant 5 minutes sur 10 points d’écoute visités 1 à 3 fois par an.</p>
+<section id="protocole-et-saisie" class="level3">
+<h3 class="anchored" data-anchor-id="protocole-et-saisie"><a href="https://www.vigienature.fr/fr/suivi-des-oiseaux-communs-stoc">Protocole</a> et saisie</h3>
+<p>Sur un <em>carré</em> de 2x2km tiré aléatoirement proche d’une commune donnée, les observateur.ice.s placent 10 <em>points</em> d’écoute dans des habitats représentatifs des habitats du carré. Un à trois <em>passages</em> sont effectués chaque année, le plus possible aux mêmes dates parmi trois périodes: mars, avril/début mai, mi-mai/mi-juin. A chaque passage, les observateur.ice.s parcourent les 10 points toujours dans le même ordre, entre 1h et 4h après le lever du soleil. A chaque point d’écoute, pendant 5 minutes, <em>tous</em> les oiseaux <em>contactés</em>, c’est à dire vus ou entendus, sont notés dans cinq <em>classes de distances</em> et l’<em>habitat</em> du point est noté selon une classification hiérarchique.</p>
+<p>Depuis 2016, les données sont saisies sur Faune-France et versées dans une base de données LPO: les points sont géolocalisés sur Biolovision, leurs coordonnées sont fixes d’année en année.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Chronologie des types de saisie">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Chronologie des types de saisie
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Avant 2001, les carrés n’étaient pas tirés aléatoirement. Ces données historiques ne sont pas incluses dans les exports.</p>
+<p>A partir de 2001, les données saisies étaient stockées à Vigie Nature. La saisie des coordonnées GPS des points n’était pas systématique, les coordonnées GPS fixes sont celles des carrés.</p>
+<p>Période de tuilage entre 2014 et 2016 où les données étaient versées à VN et à la LPO, début de la saisie systématique des coordonnées des points.</p>
+<p>Le passage de mars est optionnel depuis 2011 et fortement encouragé depuis 2022/2023.</p>
+<p>Les données d’information météorologiques, saisies au début du protocole, ne sont plus demandées.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="structures-de-données" class="level3">
+<h3 class="anchored" data-anchor-id="structures-de-données">Structures de données</h3>
+<p>Trois niveaux d’export de données sont disponibles selon les analyses prévues, par niveau d’aggrégation de données décroissant:</p>
+<ul>
+<li>données <em>“au carré”</em>: par année et par carré, une valeur d’abondance par espèce contactée</li>
+<li>données <em>“au point”</em>: par année et par point, une valeur d’abondance par espèce contactée</li>
+<li>données <em>“brutes”</em> : par année, par point et par passage, une valeur d’abondance par espèce contactée dans chaque classe de distance</li>
+</ul>
+<p>Ces exports sont construits indépendamment, à partir de la base VN (données 2001-2015) et de la base LPO (données 2016 et plus).</p>
+<p>L’export au carré est le plus utilisé et filtré. Il sert notamment au calcul des indicateurs PECBMS avec TRIM (fait par l’EBCC) ainsi qu’au calcul des indicateurs STOC avec la <a href="https://github.com/Vigie-Nature/indicatorRoutine">routine de calcul</a> à VN.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Données “au carré”</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Données “au point”</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Données “brutes”</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<table class="table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 56%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Nom du champ</th>
+<th>Description</th>
+<th>Format attendu<sup>1</sup></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>site</code></td>
+<td>Identifiant unique du carré</td>
+<td>string, six chiffres</td>
+</tr>
+<tr class="even">
+<td><code>species</code></td>
+<td>&nbsp;Code CRBPO de l’espèce</td>
+<td>string, six lettres majuscules</td>
+</tr>
+<tr class="odd">
+<td><code>num_dep</code></td>
+<td>Département du carré</td>
+<td>string, deux chiffres</td>
+</tr>
+<tr class="even">
+<td><code>abondance</code></td>
+<td><strong>abondance</strong> de l’(espèce, carré, année)</td>
+<td>nombre</td>
+</tr>
+<tr class="odd">
+<td><code>year</code></td>
+<td>Année</td>
+<td>nombre entre 2001 et 2025 inclus</td>
+</tr>
+<tr class="even">
+<td><code>longitude</code></td>
+<td>Longitude (WGS84) du carré</td>
+<td>nombre à virgule (format US)</td>
+</tr>
+<tr class="odd">
+<td><code>latitude</code></td>
+<td>Latitude (WGS84) du carré</td>
+<td>nombre à virgule (format US)</td>
+</tr>
+<tr class="even">
+<td><code>passage</code></td>
+<td>&nbsp;Nombre de passages<sup>2</sup></td>
+<td>string<sup>2</sup></td>
+</tr>
+</tbody>
+</table>
+<p><sup>1</sup>: la vérification de la conformité au format est inégalement implémentée selon les champs concernés</p>
+<p><sup>2</sup>: variable catégorielle décrivant les passsages effectués pour le (carré, année)</p>
+<ul>
+<li><code>only_{1|2|prec}</code>: seulement le passage 1 (avril/mai), 2 (mai/juin) ou précoce (mars)</li>
+<li><code>1_2</code>, <code>prec_1</code>, <code>prec_2</code>: deux passages ont été effectués, les numéros détaillent lesquels exactement</li>
+<li><code>1_2_3</code>: les trois passages ont été effectués</li>
+</ul>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<table class="table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 56%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Nom du champ</th>
+<th>Description</th>
+<th>Format attendu</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>carre</code></td>
+<td>Identifiant unique du carré</td>
+<td>string, six chiffres</td>
+</tr>
+<tr class="even">
+<td><code>point</code></td>
+<td>Identifiant du point au sein du carré</td>
+<td>string, deux chiffres de 01 à 10</td>
+</tr>
+<tr class="odd">
+<td><code>code_espece</code></td>
+<td>Code CRBPO de l’espèce</td>
+<td>string, six lettres majuscules</td>
+</tr>
+<tr class="even">
+<td><code>abondance</code></td>
+<td><em>abondance</em> de l’(espèce, point, année)</td>
+<td>nombre</td>
+</tr>
+<tr class="odd">
+<td><code>annee</code></td>
+<td>Année</td>
+<td>nombre entre 2001 et 2025</td>
+</tr>
+<tr class="even">
+<td><code>longitude</code></td>
+<td>Longitude (WGS84) du point<sup>2</sup></td>
+<td>nombre à virgule (format US)</td>
+</tr>
+<tr class="odd">
+<td><code>latitude</code></td>
+<td>Latitude (WGS84) du point<sup>2</sup></td>
+<td>nombre à virgule (format US)</td>
+</tr>
+<tr class="even">
+<td>&nbsp;<code>habitat</code></td>
+<td>Code de l’habitat principal du (point, année)</td>
+<td>string de deux caractères, format <code>"[A-E][1-9]"</code></td>
+</tr>
+<tr class="odd">
+<td><code>passage</code></td>
+<td>&nbsp;Nombre de passages<sup>3</sup></td>
+<td>string<sup>3</sup></td>
+</tr>
+</tbody>
+</table>
+<p><sup>1</sup>: la vérification de la conformité au format est inégalement implémentée selon les champs concernés</p>
+<p><sup>2</sup>: ⚠️ Avant 2014, les coordonnées des points sont soit non renseignées soit variables entre années. Utilisation possible, mais avec une attention accrue.</p>
+<p><sup>3</sup>: variable catégorielle décrivant les passsages effectués pour le (carré, année)</p>
+<ul>
+<li><code>only_{1|2|prec}</code>: seulement le passage 1 (avril/mai), 2 (mai/juin) ou précoce (mars)</li>
+<li><code>1_2</code>, <code>prec_1</code>, <code>prec_2</code>: deux passages ont été effectués, les numéros détaillent lesquels exactement</li>
+<li><code>1_2_3</code>: les trois passages ont été effectués</li>
+</ul>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<table class="table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 56%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Nom du champ</th>
+<th>Description</th>
+<th>Format attendu <sup>1</sup></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>carre</code></td>
+<td>Identifiant unique du carré</td>
+<td>string, six chiffres</td>
+</tr>
+<tr class="even">
+<td><code>point</code></td>
+<td>Identifiant du point au sein du carré</td>
+<td>string, six chiffres puis “P” puis deux chiffres de 01 à 10</td>
+</tr>
+<tr class="odd">
+<td><code>espece</code></td>
+<td>Code CRBPO de l’espèce</td>
+<td>string, six lettres majuscules</td>
+</tr>
+<tr class="even">
+<td><code>date</code></td>
+<td>Date de la session</td>
+<td>string, AAAA-MM-JJ</td>
+</tr>
+<tr class="odd">
+<td><code>annee</code></td>
+<td>Année</td>
+<td>nombre entre 2001 et 2025</td>
+</tr>
+<tr class="even">
+<td><code>abondance</code></td>
+<td>nombre d’individus notés pour l’(espèce, point, annee, passage, classe de distance)</td>
+<td>nombre</td>
+</tr>
+<tr class="odd">
+<td><code>distance_contact</code></td>
+<td>classe de distance de l’observation</td>
+<td>string<sup>2</sup></td>
+</tr>
+<tr class="even">
+<td>&nbsp;<code>habitat</code></td>
+<td>Code de l’habitat principal du (point, année)</td>
+<td>string de deux caractères, format <code>"[A-E][1-9]"</code></td>
+</tr>
+<tr class="odd">
+<td><code>etude</code></td>
+<td>Programme de suivi associé à l’observateur</td>
+<td>string, STOC_EPS ou STOC_ONF</td>
+</tr>
+<tr class="even">
+<td><code>longitude</code></td>
+<td>Longitude (WGS84) du point<sup>3</sup></td>
+<td>nombre à virgule (format US)</td>
+</tr>
+<tr class="odd">
+<td><code>latitude</code></td>
+<td>Latitude (WGS84) du point<sup>3</sup></td>
+<td>nombre à virgule (format US)</td>
+</tr>
+<tr class="even">
+<td><code>passage_calcule</code></td>
+<td>Passage attribué à la date de la session<sup>4</sup></td>
+<td>string; 1, 2, precoce ou hors_protocole</td>
+</tr>
+<tr class="odd">
+<td><code>date_retenue</code></td>
+<td>Est-ce que la date de cette ligne est retenue pour le (carre, passage) ?</td>
+<td>OK</td>
+</tr>
+<tr class="even">
+<td><code>observateur</code></td>
+<td>Nom de l’observateur ou observatrice</td>
+<td>string</td>
+</tr>
+<tr class="odd">
+<td><code>email</code></td>
+<td>Email chiffré de l’observateur ou observatrice</td>
+<td>unknown</td>
+</tr>
+</tbody>
+</table>
+<p><sup>1</sup>: la vérification de la conformité au format est inégalement implémentée selon les champs concernés</p>
+<p><sup>2</sup>: inf_25m, 25-100m, sup_100m ou transit. Attention: des espèces (rapaces, hirondelles, martinets) sont vues quasiment exclusivement en transit.</p>
+<p><sup>3</sup>: ⚠️ Avant 2014, les coordonnées des points sont soit non renseignées soit variables entre années. Utilisation possible, mais avec une attention accrue.</p>
+<p><sup>4</sup>: ⚠️ Attention aux migrateurs partiels pour lesquels l’information n’est pas la même entre le passage précoce et le passage 2 (a priori ces observations ne font pas partie des mêmes populations)</p>
+</div>
+</div>
+</div>
+</section>
+<section id="détails-des-exports" class="level3">
+<h3 class="anchored" data-anchor-id="détails-des-exports">Détails des exports</h3>
+<p>Ce paragraphe regroupe des notes sur les opérations effectuées pour produire les trois niveaux d’exports. Ces opérations sont lancées par des scripts SQL dans une base de données locale qui regroupe toutes les tables intermédiaires, qui ne sont pas toutes représentées sur la <a href="#fig-data-flow" class="quarto-xref">Figure&nbsp;<span>Résumé du chemin des données depuis la saisie par les observateurs jusqu’au trois niveaux d’exports.</span></a> pour éviter de la surcharger.</p>
+<div id="fig-data-flow" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-data-flow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/png/fbbs_dataflow.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-data-flow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Résumé du chemin des données depuis la saisie par les observateurs jusqu’au trois niveaux d’exports.
+</figcaption>
+</figure>
+</div>
+<ul>
+<li>a chaque (carre, date), le passage est attribué selon le jour de l’année (mars = précoce, avril/mai = 1, mai/juin = 2). Si deux sessions correspondent au meme passage, seule la date la plus tardive est gardée</li>
+<li>conversion des sous-espèces en code espèces et correction taxo pour SYLIBE</li>
+<li>à chaque (espece, point, annee, passage), l’abondance est la somme des abondances dans toutes les <strong>classes de distances autorisées pour l’espèce</strong></li>
+<li>à chaque (espece, point, année), l’abondance est le maximum de l’abondance renseignée sur les <strong>passages autorisés pour l’espèce</strong></li>
+</ul>
+<section id="ingestion-de-lexport-lpo-dans-une-table-de-la-base-locale" class="level4">
+<h4 class="anchored" data-anchor-id="ingestion-de-lexport-lpo-dans-une-table-de-la-base-locale">1. Ingestion de l’export LPO dans une table de la base locale</h4>
+<p><code>prepa_import_lpo.sql</code>, étape commune aux trois flèches VN transparentes sur la <a href="#fig-data-flow" class="quarto-xref">Figure&nbsp;<span>Résumé du chemin des données depuis la saisie par les observateurs jusqu’au trois niveaux d’exports.</span></a>. L’objectif est de préparer une table <code>export_STOC_SHOC</code> qui contient toutes les données transmises par la LPO. Cette étape d’ingestion contient des modifications de données et définitions de champs utiles aux étapes de filtres:</p>
+<p><strong>Identification des carrés</strong>: Le champ <code>carre</code> est fixé à 6 caractères, le champ <code>point</code> est fixé à deux caractères. Les carrés correspondant à des suivis de carrés choisis (donc par un échantillonage non aléatoire) sont identifiés par leur nom, le champ <code>etude</code>&nbsp;est modifié pour contenir <code>STOC_EPS</code> ou <code>STOC_ONF</code> pour les observations correspondant à un échantillonage aléatoire.</p>
+<p><strong>Dates</strong>: Le jour, mois, année et date complète de chaque observation est extrait dans des champs dédiés commençant par <code>date</code>.</p>
+<p><strong>Passages et nombre de points</strong>: A chaque date, le nombre de points visités est compté et le carré est flaggé si le nombre de points n’est pas 10. Le numéro du passage (1, 2 ou precoce) est attribué selon la date de visite dans un champ dédié, <code>passage_calc</code>. Si la date ne correspond pas aux dates du protocole ou si les dix points n’ont pas été visités, on note <code>passage_calc: 'hors_protocole'</code>.</p>
+<p><strong>Sous-espèces</strong>: Les sous-espèces renseignées sont regroupées à l’espèce en remplaçant les codes sous-espèces par les codes espèces correspondant. Par exemple, <code>espece: "MOTFLAFLA"</code> devient <code>espece: "MOTFLA"</code>.</p>
+<p><strong>Codes habitats</strong>: Les codes habitats observateurs sont simplifiés, pour l’habitat principal et l’habitat secondaire. Le traitement est différent selon si l’observateur a saisi deux ou quatre caractères de classification. Pour un point de milieu principal “forêt de feuillus” et de milieu secondaire “culture de colza avec haies sans arbres”, <code>PMilieu: A1</code> donne <code>Milieu_principal: A</code>; <code>Type_principal: 1</code> et <code>SMilieu: D426</code> donne <code>Milieu_secondaire: D</code>;&nbsp;<code>Type_secondaire: 4</code></p>
+<p><strong>Filtre des passages</strong>: Pour certains carrés, plusieurs dates de visite correspondent au même passage. La <code>date_retenue</code>&nbsp;est notée <code>OK</code>&nbsp;pour la visite la plus tardive pour chaque passage et <code>pas_OK</code> pour les autres visites. Cela correspond à l’hypothèse que les observateurs qui reviennent sur leur carré pour le même passage le font car ils ne sont pas satisfaits des conditions d’observations à la première visite.</p>
+</section>
+<section id="filtres-et-modifications-pour-lexport-carré" class="level4">
+<h4 class="anchored" data-anchor-id="filtres-et-modifications-pour-lexport-carré">2. Filtres et modifications pour l’export “carré”</h4>
+<p>Dans <code>prepa_data_stoc.sql</code>, une table <code>datacarre_2016_2026</code>&nbsp;est créee à partir de <code>export_STOC_SHOC</code>, et une table <code>datacarre_2001_2015</code> est créée à partir de <code>observation</code>, une table en local dans la base regroupant les données saisies avant 2016.</p>
+<p><strong>Calcul des abondances:</strong> Les abondances par carré et par année (<code>abondance</code>) sont calculées pour chaque espèce. De manière générale, pour un carré, une année et une espèce, à un point donné, on somme les <em>classes de distance sélectionnées</em> pour chaque passage, et l’abondance au point est le maximum de ces sommes parmi les <em>passages sélectionnées</em>. L’abondance au carré est ensuite la somme des abondances des 10 points. Trois possibilités selon la liste d’espèces (de bas en haut dans le fichier .sql):</p>
+<p><!-- - pour les @sec-espece-oenoen, les classes de distance sélectionnées sont inf_25m, 25-100m et sup_100m et seul le passage 2 est sélectionné. Ainsi, `abondance` est la somme des abondances de chaque point, `maxabd`. `maxabd` est la somme des contacts de la date retenue pour le passage 2 dans les classes de distance ni vides, ni "transit"
+ - pour les @sec-espece-hirrus, toutes les classes de distance sont sélectionnées et les trois passages sont sélectionnés. Ainsi, `abondance` est la somme des abondances de chaque point, `maxabd`. `maxabd` est le maximum des sommes des contacts dans toutes les classes de distance, parmi les passages saisis (uniquement les dates retenues).
+ - pour toutes les autres espèces, les classes de distance sélectionnées sont inf_25m, 25-100m et sup_100m et les trois passages sont sélectionnés. Ainsi, `abondance` est la somme des abondances de chaque point, `maxabd`. `maxabd` est le maximum des sommes des contacts dans les classes de distance valides (tout sauf "transit" et non renseigné), parmi les passages saisis (uniquement les dates retenues). --></p>
+<div id="tbl-liste-especes" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-liste-especes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Critères de filtre des abondances par liste de code espèce. <sup>1</sup>: le filtre exact est <code>!= "transit"</code> pour les données avant 2016 et <code>not in '""', 'transit'</code> après
+</figcaption>
+<div aria-describedby="tbl-liste-especes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table">
+<thead>
+<tr class="header">
+<th>Espèces</th>
+<th>Classes de distance séléctionnées</th>
+<th>Passages sélectionnés</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="#sec-espece-oenoen" class="quarto-xref"><span>Espèces migratrices tardives</span></a></td>
+<td>inf_25m, 25-100m, sup_100m<sup>1</sup></td>
+<td>&nbsp;2 uniquement</td>
+</tr>
+<tr class="even">
+<td><a href="#sec-espece-hirrus" class="quarto-xref"><span>Espèces majoritairement détectées en vol</span></a></td>
+<td>&nbsp;toutes</td>
+<td>1, 2 et precoce</td>
+</tr>
+<tr class="odd">
+<td>toutes les autres</td>
+<td>&nbsp;inf_25m, 25-100m, sup_100m<sup>1</sup></td>
+<td>1, 2 et precoce&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Dans les trois cas, comme <code>passage_calc</code>&nbsp;est utilisé pour identifier les passages, les données des visites hors dates du protocole ou des (carré, année) avec moins de dix points saisis ne sont pas utilisées.</p>
+<p><strong>Autres informations.</strong> Après le calcul des abondances, l’information des passages saisis est résumée dans une colonne <code>passage</code>. Ce calcul est fait par (carré, année), quelles que soient les espèces. Les coordonnées WGS84 des carrés sont ajoutés à la table.</p>
+<p><strong>Finalisation.</strong> Les données 2001-2015 et 2016+, rassemblées séparément jhusque là, sont filtrées pour les années qui leur correspondent et rassemblées dans la même table, <code>datacarre</code>.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="2a: export au carré pour les calculs de tendances">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+2a: export au carré pour les calculs de tendances
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>La table <code>countingdata</code>, utilisée pour les calculs de tendances des espèces au carré, est basée sur <code>datacarre</code> avec des filtres supplémentaires:</p>
+<ul>
+<li>le code espèce doit correspondre à un oiseau de la table des codes espèces CRBPO</li>
+<li>l’espèce n’est pas une <a href="#sec-espece-lararg" class="quarto-xref"><span>Espèces au suivi trop incertain pour les tendances</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="listes-despèces" class="level3">
+<h3 class="anchored" data-anchor-id="listes-despèces">Listes d’espèces</h3>
+<p>Référence biblio possible à ce sujet: Princé et al.&nbsp;2013</p>
+<section id="sec-espece-oenoen" class="level4">
+<h4 class="anchored" data-anchor-id="sec-espece-oenoen">Espèces migratrices tardives</h4>
+<p><code>'MOTFLA','SAXRUB','ANTPRA','OENOEN','PHYTRO','TURPIL'</code></p>
+</section>
+<section id="sec-espece-hirrus" class="level4">
+<h4 class="anchored" data-anchor-id="sec-espece-hirrus">Espèces majoritairement détectées en vol</h4>
+<p><code>'AAPUAPU', 'HIRRUS', 'BUTBUT', 'DELURB', 'FALTIN', 'RIPRIP', 'MILMIG', 'PTYRUP', 'ACCNIS','FALSUB'</code></p>
+</section>
+<section id="sec-espece-lararg" class="level4">
+<h4 class="anchored" data-anchor-id="sec-espece-lararg">Espèces au suivi trop incertain pour les tendances</h4>
+<p><code>'FRIMON','TURILI','GRIVES','PHACAR','LARARG','LARMIC','TADTAD','AYTFER','TRIOCH','LARRID'</code></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/data-sterf.html" class="pagination-link  aria-label=" sterf"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Sterf</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© CC BY 4.0 <a href="https://www.vigienature.fr/fr">Vigie-Nature</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Built with <a href="https://quarto.org/">Quarto</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
