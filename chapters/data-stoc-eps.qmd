@@ -115,7 +115,7 @@ L'export au carré est le plus utilisé et filtré. Il sert notamment au calcul 
 
 ### Détails des exports
 
-Ce paragraphe regroupe des notes sur les opérations effectuées pour produire les trois niveaux d'exports. Ces opérations sont lancées par des scripts SQL dans une base de données locale qui regroupe toutes les tables intermédiaires, qui ne sont pas toutes représentées sur la @fig-data-flow pour éviter de la surcharger.
+Ce paragraphe regroupe des notes sur les opérations effectuées pour produire les trois niveaux d'exports. Ces opérations sont lancées par des scripts SQL dans une base de données locale qui regroupe toutes les tables intermédiaires, qui ne sont pas toutes représentées sur la [@fig-data-flow] pour éviter de la surcharger.
 
 ::: {#fig-data-flow}
 
@@ -131,7 +131,7 @@ Résumé du chemin des données depuis la saisie par les observateurs jusqu'au t
 
 #### 1. Ingestion de l'export LPO dans une table de la base locale
 
-`prepa_import_lpo.sql`, étape commune aux trois flèches VN transparentes sur la @fig-data-flow. L'objectif est de préparer une table `export_STOC_SHOC` qui contient toutes les données transmises par la LPO. Cette étape d'ingestion contient des modifications de données et définitions de champs utiles aux étapes de filtres:
+`prepa_import_lpo.sql`, étape commune aux trois flèches VN transparentes sur la [@fig-data-flow]. L'objectif est de préparer une table `export_STOC_SHOC` qui contient toutes les données transmises par la LPO. Cette étape d'ingestion contient des modifications de données et définitions de champs utiles aux étapes de filtres:
 
 **Identification des carrés**: Le champ `carre` est fixé à 6 caractères, le champ `point` est fixé à deux caractères. Les carrés correspondant à des suivis de carrés choisis (donc par un échantillonage non aléatoire) sont identifiés par leur nom, le champ `etude` est modifié pour contenir `STOC_EPS` ou `STOC_ONF` pour les observations correspondant à un échantillonage aléatoire.
 
@@ -147,7 +147,7 @@ Résumé du chemin des données depuis la saisie par les observateurs jusqu'au t
 
 #### 2. Filtres et modifications pour l'export "carré"
 
-Dans `prepa_data_stoc.sql`, une table `datacarre_2016_2026` est créee à partir de `export_STOC_SHOC`, et une table `datacarre_2001_2015` est créée à partir de `observation`, une table en local dans la base regroupant les données saisies avant 2016.
+Dans `prepa_data_stoc.sql`, une table `datacarre_2016_2026` est créée à partir de `export_STOC_SHOC`, et une table `datacarre_2001_2015` est créée à partir de `observation`, une table en local dans la base regroupant les données saisies avant 2016.
 
 **Calcul des abondances:** Les abondances par carré et par année (`abondance`) sont calculées pour chaque espèce. De manière générale, pour un carré, une année et une espèce, à un point donné, on somme les *classes de distance sélectionnées* pour chaque passage, et l'abondance au point est le maximum de ces sommes parmi les *passages sélectionnées*. L'abondance au carré est ensuite la somme des abondances des 10 points. Trois possibilités selon la liste d'espèces (de bas en haut dans le fichier .sql):
  
@@ -170,19 +170,44 @@ Dans les trois cas, comme `passage_calc` est utilisé pour identifier les passa
 
 **Autres informations.** Après le calcul des abondances, l'information des passages saisis est résumée dans une colonne `passage`. Ce calcul est fait par (carré, année), quelles que soient les espèces. Les coordonnées WGS84 des carrés sont ajoutés à la table. 
 
-**Finalisation.** Les données 2001-2015 et 2016+, rassemblées séparément jhusque là, sont filtrées pour les années qui leur correspondent et rassemblées dans la même table, `datacarre`.
+**Finalisation.** Les données 2001-2015 et 2016+, traitées séparément jusque là, sont filtrées pour les années qui leur correspondent et rassemblées dans la même table, `datacarre`.
 
 ::: {.callout-note collapse="true" title="2a: export au carré pour les calculs de tendances"}
 
 La table `countingdata`, utilisée pour les calculs de tendances des espèces au carré, est basée sur `datacarre` avec des filtres supplémentaires:
 
  - le code espèce doit correspondre à un oiseau de la table des codes espèces CRBPO
- - l'espèce n'est pas une @sec-espece-lararg
+ - le code espèce ne doit pas être dans la liste des @sec-espece-lararg
+:::
+
+#### 3. Filtres et modifications pour l'export "point"
+
+Dans `prepare_data_stoc.sql`, une table `datapoint_2016_2026` est créée à partir de `export_STOC_SHOC`, une table `datapoint_observation` est créée à partir de la table en local des données avant 2016.
+
+**Calcul des abondances:** Pour chaque espèce, on calcule `abondance`, une valeur d'abondance chaque année à chaque point. A un point donné, on somme les contacts des *classes de distance sélectionnées* dans chaque passage et l'abondance au point est le maximum de ces sommes parmi les *passages sélectionnées*. Les classes et passages varient selon les espèces, voir [@tbl-liste-especes].
+
+Les données des visites hors dates du protocole ou des (point, année) avec moins de dix points saisis ne sont pas utilisées.
+
+**Autres informations:** Après le calcul des abondances, l'information des passages saisis est résumée dans une colonne `passsage`, calculée par *carré*. La colonne `habitat` est ajoutée en concaténant les deux premiers caractères de l'habitat principal (milieu et type). La `longitude` et la `latitude` des points sont ajoutées, mais sont parfois vides ou différentes entre années pour un même point.
+
+**Finalisation.** Les données 2001-2015 et 2016, traitées séparément jusque là, sont filtrées pour les années qui leur correspondent et rassemblées dans la même table, `datapoint`. Les données où `espece` est vide sont enlevées.
+
+#### 4. Filtres et modifications pour l'export "brut"
+
+Dans `prepare_data_stoc.sql`, une table `databrut` est créée à partir de `export_STOC_SHOC`, une table `databrut_observation` est créée à partir de la table en local des données avant 2016.
+
+Tous les champs sont exportés sans filtre ni modification tant que l'observation correspond à un échantillonage aléatoire et que le champ `espece` n'est pas vide.
+
+::: {.callout-note collapse="true" title="4a: export data_passages pour des questions de recherche"}
+
+A partir de databrut, une table par point et par passage est construite selon les *classes de distance autorisées* des espèces, pour tous les passages mais pas pour les visites hors protocole.
+
+Cette table correspond ainsi à des suivis au point avec plusieurs données par an dans un point, mais attention à communiquer sur les @sec-espece-oenoen.
 :::
 
 ### Listes d'espèces
 
-Référence biblio possible à ce sujet: Princé et al. 2013
+Référence biblio possible à ce sujet (pour les deux premières listes): Princé et al. 2013, Journal of Environmental Management
 
 #### Espèces migratrices tardives {#sec-espece-oenoen}
 
