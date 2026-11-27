@@ -569,7 +569,7 @@ Figure&nbsp;1: Résumé du chemin des données depuis la saisie par les observat
 </section>
 <section id="filtres-et-modifications-pour-lexport-carré" class="level4">
 <h4 class="anchored" data-anchor-id="filtres-et-modifications-pour-lexport-carré">2. Filtres et modifications pour l’export “carré”</h4>
-<p>Dans <code>prepa_data_stoc.sql</code>, une table <code>datacarre_2016_2026</code>&nbsp;est créee à partir de <code>export_STOC_SHOC</code>, et une table <code>datacarre_2001_2015</code> est créée à partir de <code>observation</code>, une table en local dans la base regroupant les données saisies avant 2016.</p>
+<p>Dans <code>prepa_data_stoc.sql</code>, une table <code>datacarre_2016_2026</code>&nbsp;est créée à partir de <code>export_STOC_SHOC</code>, et une table <code>datacarre_2001_2015</code> est créée à partir de <code>observation</code>, une table en local dans la base regroupant les données saisies avant 2016.</p>
 <p><strong>Calcul des abondances:</strong> Les abondances par carré et par année (<code>abondance</code>) sont calculées pour chaque espèce. De manière générale, pour un carré, une année et une espèce, à un point donné, on somme les <em>classes de distance sélectionnées</em> pour chaque passage, et l’abondance au point est le maximum de ces sommes parmi les <em>passages sélectionnées</em>. L’abondance au carré est ensuite la somme des abondances des 10 points. Trois possibilités selon la liste d’espèces (de bas en haut dans le fichier .sql):</p>
 <p><!-- - pour les @sec-espece-oenoen, les classes de distance sélectionnées sont inf_25m, 25-100m et sup_100m et seul le passage 2 est sélectionné. Ainsi, `abondance` est la somme des abondances de chaque point, `maxabd`. `maxabd` est la somme des contacts de la date retenue pour le passage 2 dans les classes de distance ni vides, ni "transit"
  - pour les @sec-espece-hirrus, toutes les classes de distance sont sélectionnées et les trois passages sont sélectionnés. Ainsi, `abondance` est la somme des abondances de chaque point, `maxabd`. `maxabd` est le maximum des sommes des contacts dans toutes les classes de distance, parmi les passages saisis (uniquement les dates retenues).
@@ -611,7 +611,7 @@ Table&nbsp;1: Critères de filtre des abondances par liste de code espèce. <sup
 </div>
 <p>Dans les trois cas, comme <code>passage_calc</code>&nbsp;est utilisé pour identifier les passages, les données des visites hors dates du protocole ou des (carré, année) avec moins de dix points saisis ne sont pas utilisées.</p>
 <p><strong>Autres informations.</strong> Après le calcul des abondances, l’information des passages saisis est résumée dans une colonne <code>passage</code>. Ce calcul est fait par (carré, année), quelles que soient les espèces. Les coordonnées WGS84 des carrés sont ajoutés à la table.</p>
-<p><strong>Finalisation.</strong> Les données 2001-2015 et 2016+, rassemblées séparément jhusque là, sont filtrées pour les années qui leur correspondent et rassemblées dans la même table, <code>datacarre</code>.</p>
+<p><strong>Finalisation.</strong> Les données 2001-2015 et 2016+, traitées séparément jusque là, sont filtrées pour les années qui leur correspondent et rassemblées dans la même table, <code>datacarre</code>.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="2a: export au carré pour les calculs de tendances">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -627,8 +627,38 @@ Table&nbsp;1: Critères de filtre des abondances par liste de code espèce. <sup
 <p>La table <code>countingdata</code>, utilisée pour les calculs de tendances des espèces au carré, est basée sur <code>datacarre</code> avec des filtres supplémentaires:</p>
 <ul>
 <li>le code espèce doit correspondre à un oiseau de la table des codes espèces CRBPO</li>
-<li>l’espèce n’est pas une <a href="#sec-espece-lararg" class="quarto-xref"><span>Espèces au suivi trop incertain pour les tendances</span></a></li>
+<li>le code espèce ne doit pas être dans la liste des <a href="#sec-espece-lararg" class="quarto-xref"><span>Espèces au suivi trop incertain pour les tendances</span></a></li>
 </ul>
+</div>
+</div>
+</div>
+</section>
+<section id="filtres-et-modifications-pour-lexport-point" class="level4">
+<h4 class="anchored" data-anchor-id="filtres-et-modifications-pour-lexport-point">3. Filtres et modifications pour l’export “point”</h4>
+<p>Dans <code>prepare_data_stoc.sql</code>, une table <code>datapoint_2016_2026</code> est créée à partir de <code>export_STOC_SHOC</code>, une table <code>datapoint_observation</code> est créée à partir de la table en local des données avant 2016.</p>
+<p><strong>Calcul des abondances:</strong> Pour chaque espèce, on calcule <code>abondance</code>, une valeur d’abondance chaque année à chaque point. A un point donné, on somme les contacts des <em>classes de distance sélectionnées</em> dans chaque passage et l’abondance au point est le maximum de ces sommes parmi les <em>passages sélectionnées</em>. Les classes et passages varient selon les espèces, voir <a href="#tbl-liste-especes" class="quarto-xref">Table&nbsp;<span>Critères de filtre des abondances par liste de code espèce. 1: le filtre exact est != "transit" pour les données avant 2016 et not in '""', 'transit' après</span></a>.</p>
+<p>Les données des visites hors dates du protocole ou des (point, année) avec moins de dix points saisis ne sont pas utilisées.</p>
+<p><strong>Autres informations:</strong> Après le calcul des abondances, l’information des passages saisis est résumée dans une colonne <code>passsage</code>, calculée par <em>carré</em>. La colonne <code>habitat</code> est ajoutée en concaténant les deux premiers caractères de l’habitat principal (milieu et type). La <code>longitude</code> et la <code>latitude</code> des points sont ajoutées, mais sont parfois vides ou différentes entre années pour un même point.</p>
+<p><strong>Finalisation.</strong> Les données 2001-2015 et 2016, traitées séparément jusque là, sont filtrées pour les années qui leur correspondent et rassemblées dans la même table, <code>datapoint</code>. Les données où <code>espece</code> est vide sont enlevées.</p>
+</section>
+<section id="filtres-et-modifications-pour-lexport-brut" class="level4">
+<h4 class="anchored" data-anchor-id="filtres-et-modifications-pour-lexport-brut">4. Filtres et modifications pour l’export “brut”</h4>
+<p>Dans <code>prepare_data_stoc.sql</code>, une table <code>databrut</code> est créée à partir de <code>export_STOC_SHOC</code>, une table <code>databrut_observation</code> est créée à partir de la table en local des données avant 2016.</p>
+<p>Tous les champs sont exportés sans filtre ni modification tant que l’observation correspond à un échantillonage aléatoire et que le champ <code>espece</code> n’est pas vide.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="4a: export data_passages pour des questions de recherche">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+4a: export data_passages pour des questions de recherche
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>A partir de databrut, une table par point et par passage est construite selon les <em>classes de distance autorisées</em> des espèces, pour tous les passages mais pas pour les visites hors protocole.</p>
+<p>Cette table correspond ainsi à des suivis au point avec plusieurs données par an dans un point, mais attention à communiquer sur les <a href="#sec-espece-oenoen" class="quarto-xref"><span>Espèces migratrices tardives</span></a>.</p>
 </div>
 </div>
 </div>
@@ -636,7 +666,7 @@ Table&nbsp;1: Critères de filtre des abondances par liste de code espèce. <sup
 </section>
 <section id="listes-despèces" class="level3">
 <h3 class="anchored" data-anchor-id="listes-despèces">Listes d’espèces</h3>
-<p>Référence biblio possible à ce sujet: Princé et al.&nbsp;2013</p>
+<p>Référence biblio possible à ce sujet (pour les deux premières listes): Princé et al.&nbsp;2013, Journal of Environmental Management</p>
 <section id="sec-espece-oenoen" class="level4">
 <h4 class="anchored" data-anchor-id="sec-espece-oenoen">Espèces migratrices tardives</h4>
 <p><code>'MOTFLA','SAXRUB','ANTPRA','OENOEN','PHYTRO','TURPIL'</code></p>
